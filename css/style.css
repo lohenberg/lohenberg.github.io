@@ -11,7 +11,8 @@ html {
 body {
     margin: 0;
     font-size: 16px;
-    line-height: 1.5;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     color: var(--font-color);
     background: var(--bg-color);
@@ -34,7 +35,7 @@ summary {
 }	
 
 .container {
-    max-width: 48em;
+    max-width: 45em;
     margin: 0 auto;
 }
 
@@ -45,14 +46,17 @@ main {
 /* Headers */
 h1 {
     font-size: 1.35em;
+    margin: 2em 0 1em 0;
 }
 
 h2 {
     font-size: 1.2em;
+    margin: 2em 0 1em 0;
 }
 
 h3 {
     font-size: 1.1em;
+    margin: 2em 0 1em 0;
 }
 
 /* Links */
@@ -135,6 +139,7 @@ pre,
 kbd {
     font-family: monospace;
     font-size: 0.90em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
     line-height: 154%;
 }
 
@@ -153,13 +158,12 @@ p {
 
 hr {
     border-top: 1px solid var(--hr-color);
-    margin-top: 3em;
     height: 1px;
     border: 0;
 }
 
 ul ol, ol ol, ul ul {
-    margin: 0em 2em;
+    margin: 0em 0em;
 }
 
 /* Header */
@@ -187,7 +191,8 @@ header h2 {
 }
 
 header nav {
-    margin-top: 1em;
+	font-size: 0.9em;
+    margin-top: 2.4em;
     max-width: 100%;
     text-align: right;
 }
@@ -197,9 +202,9 @@ header nav a {
 }
 
 .site-title {
+	font-size: 1.5em;
     white-space: nowrap;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .common-header {
@@ -246,7 +251,7 @@ main h1 {
 }
 
 .post-title.favorite::after {
-    content: "☆";
+    content: "+";
     display: inline-block;
     margin-left: 0.2em;
 }

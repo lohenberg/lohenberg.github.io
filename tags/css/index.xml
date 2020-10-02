@@ -131,12 +131,13 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Item&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
+&lt;li&gt;Item
+&lt;ul&gt;
 &lt;li&gt;First Sub-item&lt;/li&gt;
 &lt;li&gt;Second Sub-item&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;GIF&lt;!-- raw HTML omitted --&gt; is a bitmap image format.&lt;/p&gt;
 &lt;p&gt;H&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O&lt;/p&gt;
