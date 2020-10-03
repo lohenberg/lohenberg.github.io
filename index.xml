@@ -65,7 +65,19 @@
 &lt;li&gt;masterブランチにpushできなくて随分と時間がかかった。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;テキストサンプル&#34;&gt;テキストサンプル&lt;/h3&gt;
-&lt;p&gt;とあるPythonパッケージが依存しているパッケージを表示するには、pipdeptreeが便利。 オプションの指定なしで実行すると、全パッケージの依存リストが表示される。 -p package_nameオプションで特定のパッケージに絞ることができる。&lt;/p&gt;</description>
+&lt;p&gt;とあるPythonパッケージが依存しているパッケージを表示するには、pipdeptreeが便利。 オプションの指定なしで実行すると、全パッケージの依存リストが表示される。 -p package_nameオプションで特定のパッケージに絞ることができる。&lt;/p&gt;
+&lt;h3 id=&#34;core-web-vitalsとは&#34;&gt;Core Web Vitalsとは&lt;/h3&gt;
+&lt;p&gt;具体的に3つの指標とは、以下を指します。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Largest Contentful Paint (LCP)&lt;/li&gt;
+&lt;li&gt;First Input Delay (FID)&lt;/li&gt;
+&lt;li&gt;Cumulative Layout Shift (CLS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-most-exciting-soccer-manga-ever&#34;&gt;The Most Exciting Soccer Manga Ever!&lt;/h4&gt;
+&lt;p&gt;This manga is the only one I read as soon as a new comic book is released.&lt;/p&gt;
+&lt;p&gt;There have been a few major soccer mangas such as the classic &amp;ldquo;Captain Tsubasa&amp;rdquo;. But I believe &amp;ldquo;Ao Ashi&amp;rdquo; will exceed them. If you have ever played soccer, I believe you agree with me. &amp;ldquo;Ao Ashi&amp;rdquo; is realistic and exciting. Just try reading it.&lt;/p&gt;
+&lt;p&gt;The problem is that there seems to be no English edition yet. If you are interested in learning Japanese, &amp;ldquo;Ao Ashi&amp;rdquo; would be an enjoyable reading material :)&lt;/p&gt;
+&lt;h4 id=&#34;初稿が出たらこの記事は削除します&#34;&gt;初稿が出たらこの記事は削除します&lt;/h4&gt;</description>
     </item>
     
     <item>

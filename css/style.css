@@ -1,6 +1,6 @@
 /* Basic */
 html {
-    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: Helvetica Neue", Arial,"Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
     /* 1 */
     -ms-text-size-adjust: 100%;
     /* 2 */
@@ -10,9 +10,9 @@ html {
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.04em;
-    line-height: 1.6;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     color: var(--font-color);
     background: var(--bg-color);
@@ -35,7 +35,7 @@ summary {
 }	
 
 .container {
-    max-width: 45em;
+    max-width: 48em;
     margin: 0 auto;
 }
 
@@ -56,6 +56,11 @@ h2 {
 
 h3 {
     font-size: 1.1em;
+    margin: 2em 0 1em 0;
+}
+
+h4 {
+    font-size: 1em;
     margin: 2em 0 1em 0;
 }
 
