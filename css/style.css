@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.04em;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -207,7 +207,7 @@ header nav a {
 }
 
 .site-title {
-	font-size: 1.5em;
+	font-size: 1.6em;
     white-space: nowrap;
     font-weight: bolder;
 }
