@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>forex on kadekul</title>
+    <title>forex on USD/JPY (2021-05-29) weekly review</title>
     <link>https://lohenberg.github.io/tags/forex/</link>
-    <description>kadekul (forex)</description>
+    <description>USD/JPY (2021-05-29) weekly review (forex)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://lohenberg.github.io/tags/forex/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>USD/JPY (2021-05-29) weekly review</title>
+      <link>https://lohenberg.github.io/post/20210529usdjpy/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/post/20210529usdjpy/</guid>
+      <description>&lt;p&gt;2021年5月24日～28日のドル円を振り返り。&lt;/p&gt;
+&lt;h2 id=&#34;4時間足&#34;&gt;4時間足&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;USDJPYM30_1.png&#34; alt=&#34;2020-10-21USD/JPY-1H&#34;&gt;&lt;/p&gt;
+&lt;p&gt;二重にも三重にも孕んでしまっている。このような場合は下に引きつけて買う、上に引きつけて売るを徹底する。&lt;/p&gt;
+&lt;h2 id=&#34;30分足&#34;&gt;30分足&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn-ak.f.st-hatena.com/images/fotolife/k/kadekul/20201105/20201105012556.png&#34; alt=&#34;2020-10-21 USD/JPY-4H&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下限赤領域で下値を固めた後、中段付近でボックスを形成して短期的な天井を作りかけた。このボックスが崩れたところで上限青領域に向かってロング。&lt;/p&gt;
+&lt;h2 id=&#34;上昇トレンドに疑問符がついた&#34;&gt;上昇トレンドに疑問符がついた&lt;/h2&gt;
+&lt;p&gt;4時間足を見ると、105.750はダブルボトムの2番底から上昇してきたレートであることがわかります。買い勢力としては安値更新を防ぎ、次は高値の更新を窺っています。ところが105.750で跳ね返されたことで高値の更新が叶いませんでした。逆に高値を切り下げたことで、今度は売り勢力がダブルボトムを崩し安値の更新を窺う風向きに変わったと考えられます。&lt;/p&gt;
+&lt;h2 id=&#34;上昇ペースが維持できなくなった&#34;&gt;上昇ペースが維持できなくなった&lt;/h2&gt;
+&lt;p&gt;ダブルボトムの2番底から一定のペースで上昇を続けて来たものの、105.750に到達したことを境にそのペースを維持できなくなり、ついには赤線で示した上昇チャネルを下抜けてしまいました。この分かりやすい形を見て弱気に転じた人が出たと考えられます。&lt;/p&gt;
+&lt;h2 id=&#34;先週木曜ハラミ上抜けが失敗した&#34;&gt;先週木曜ハラミ上抜けが失敗した&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn-ak.f.st-hatena.com/images/fotolife/k/kadekul/20201105/20201105012548.png&#34; alt=&#34;2020-10-21 USD/JPY-30M&#34;&gt;&lt;/p&gt;
+&lt;p&gt;黄色矢印で示した部分が先週木曜の下落で、以降の3日間はこの範囲に孕まれ続けて値動きが推移してきました。従って黄色矢印を上下どちらに抜けるかで、買いと売りの勢力に勝敗がつくことになります。結果としては上に抜けかけたものの、その日のうちに全否定されてしまいました。この動きを見て今度は下への動きに勢いがついたと考えられます。&lt;/p&gt;
+&lt;h2 id=&#34;以降は狼狽の連鎖で下落した&#34;&gt;以降は狼狽の連鎖で下落した&lt;/h2&gt;
+&lt;p&gt;以上のような要因から買う勢力は意気を削がれ、下へ動き始めることになります。先週木曜より以降の3日間の小幅な値動きで買っていた人と上抜けを見て買った人は、105.750に到達するまで一時の含み益に歓喜していたことでしょう。ところが次の一瞬で含み損に変わり、更に損失が増えていきました。&lt;/p&gt;
+&lt;p&gt;逃げるタイミングを逸した人はどこかで反発することを期待しますが、無慈悲にもレートは自由落下します。ついに耐えきれなくなって損切りすると、その投げ売りによって更にレートが下がります。売りが売りを呼ぶ狼狽の連鎖によってレートが下がり、ようやく止まったのは140pips下落した時でした。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>USD/JPY (2020-10-21) 140pips大幅下落を考察</title>
