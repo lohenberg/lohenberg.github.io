@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Lohenberg</title>
+    <link>https://lohenberg.github.io/posts/</link>
+    <description>Recent content in Posts on Lohenberg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Which Comes First: Money Stock or Base Money? — The Twist Between Theory and Reality（日本語訳）</title>
+      <link>https://lohenberg.github.io/posts/20250519/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20250519/</guid>
+      <description>導入・問題提起 2013年、日銀は当時の黒田総裁のもとで「異次元の金融緩和」と称される前例のない政策を打ち出した。物価上昇率2%の達成を目標に、長期国債の大量買入れを通じてマネタリーベースを急拡大させ、人々の将来に対するインフレ期待を高めることで、消費や投資を刺激しようとするものだった。これは従来の金利操作型政策から大きく踏み出し、「人々の期待」に働きかけて経済全体を動かすという意欲的な試みだったといえる。
+しかし、このアプローチは本当に機能したのだろうか。たとえば、日銀が供給した大量のマネーは、果たして実体経済の中で実際に使われ、循環したのか。期待が行動を変えるという前提は、現実の経済にどこまで通用したのか。そもそも私たちの経済において、お金の流れはどこから始まるのか？——この問いを手がかりに、現代のマネーの動き方と、それを前提とした政策の効果を改めて考えてみたい。
+世界一般の金融メカニズム 経済の現場におけるマネーの流れは、「銀行が貸し出すことで預金が生まれる」という構造が基本である。これは直感に反するかもしれないが、現代の金融実務においては、銀行は預金を集めてから貸し出すのではなく、貸出と同時に預金を創造する。たとえば企業が設備投資のために銀行から融資を受けると、その時点で企業の口座に貸出金額が預金として記帳され、これが経済における新しいマネーとして機能する。
+この点について、イングランド銀行（Bank of England）は2014年のレポートで次のように述べている。
+ &amp;ldquo;Whenever a bank makes a loan, it simultaneously creates a matching deposit in the borrower’s bank account, thereby creating new money. Rather than banks receiving deposits when households save and then lending them out, bank lending creates deposits.&amp;rdquo;
+ つまり、お金は貸出によって創られるのであり、貯蓄が貸出の原資となるという従来のイメージとは異なる構造を持っている。
+さらに同レポートでは、マネー創造の主体が誰であるかについても明確にしている。
+ &amp;ldquo;Commercial banks create money, in the form of bank deposits, by making new loans.&amp;rdquo;
+ マネーの創造は中央銀行ではなく、商業銀行が日々の貸出業務を通じて担っているのである。この事実は、中央銀行がマネー供給を直接コントロールしているという一般的な誤解を正すものだ。実際、イングランド銀行は次のようにも指摘している。
+ &amp;ldquo;In reality, neither are reserves a binding constraint on lending, nor does the central bank fix the amount of reserves that are available.</description>
+    </item>
+    
+    <item>
+      <title>The True Nature of Reserves: When Quantitative Easing Works—and When It Doesn&#39;t（日本語訳）</title>
+      <link>https://lohenberg.github.io/posts/20250515/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20250515/</guid>
+      <description>問題提起：中央銀行の準備金積み増しはインフレを喚起するのか？ 量的緩和（Quantitative Easing, QE）は、金融危機以降の主要国で頻繁に採用されてきた政策手段であるが、その効果、とりわけインフレとの因果関係については今なお議論が続いている。通俗的な説明では、中央銀行が資産を買い入れて準備金を増やすことで、世の中の「お金の量」が増え、やがてインフレが加速するとされている。だが、この見解には根本的な誤解が含まれている。
+実際には、中央銀行によって創出された準備金は、市中銀行の保有資産であり、家計や企業などの実体経済部門には直接届かない。したがって、中央銀行のバランスシートが拡大しても、それ自体は「非金融部門における購買力の増加」を意味するものではない。ECB副総裁 Vítor Constâncio は次のように指摘する。
+ &amp;ldquo;Central bank reserves are held by banks and are not part of money held by the non-financial sector, hence not, per se, an inflationary type of liquidity. There is no acceptable theory linking in a necessary way the monetary base created by central banks to inflation.&amp;rdquo;
+中央銀行準備金は銀行によって保有されるものであり、非金融部門が保有する貨幣の一部ではない。そのため、それ自体がインフレ的な流動性とは言えない。また、中央銀行が創出するマネタリーベースとインフレとを必然的に結びつける理論は存在しない。
+ このように見てくると、量的緩和がインフレをもたらすという因果関係は、直観的には理解しやすいが、理論的にも実証的にも支持されているわけではない。むしろ、そのような誤解が金融政策の評価を歪めてきた可能性がある。
+準備金の増加とは何を意味するのか？ 量的緩和政策において中央銀行が行っていることは、主として国債やMBS（モーゲージ担保証券）などの資産を市場から買い入れることである。このとき、買い入れの対価として新たな準備金が市中銀行に供給されるが、この「準備金の増加」が即座に民間の貸出の増加をもたらすわけではない。準備金の総量は、単に中央銀行の資産取得の規模を反映しているにすぎず、それ自体が銀行の融資活動の指標とはなり得ない。
+この点について、Interest on Excess Reserves and Cash &amp;ldquo;Parked&amp;rdquo; at the Fed (2012) では次のように明言されている。</description>
+    </item>
+    
+  </channel>
+</rss>
