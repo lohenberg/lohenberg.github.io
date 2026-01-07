@@ -6,7 +6,40 @@
     <description>Recent content in 2025 on Lohenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/tags/2025/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2025-2026 Lohenberg, all rights reserved.</copyright>
+    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/tags/2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>元手ゼロ資産チャレンジ</title>
+      <link>https://lohenberg.github.io/posts/20251229/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20251229/</guid>
+      <description>概要 本記事は、銀行からの現金入金を行わずに取得した暗号資産・株式・ETF等を対象とした資産ログの起点となるものである。フォーセットや報酬、ポイント交換・ポイント投資によって得た資産のみを扱い、その保有状況と変化を、ルール化された形式で記録する。
+成果の最大化ではなく、制約条件下での推移を正確に残すことを目的とし、以下にチャレンジの基本ルールと、資産スナップショットの形式を定義する。
+主なルール  銀行口座からの現金入金は禁止  JPY・USD 等の直接入金は行わない   取得元は「無料／代替価値」に限定  暗号資産フォーセット ステーキング報酬・エアドロップ 楽天／Ponta 等のポイント交換 ポイント投資による株式・ETF取得   取得時点の原価は原則ゼロとして扱う  avg（取得単価）は参考値としてのみ記録 評価は各時点での value_jpy を基準    Asset Snapshot 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // Crypto value_jpy=9158 BTC qty=0.0003 value_jpy=4051 ETH qty=0.002047 value_jpy=933 BCH qty=0.00951882 value_jpy=867 SOL qty=0.079889948 value_jpy=1519 OAS qty=3194.855874 value_jpy=805 ATOM qty=2.74454 value_jpy=812 NEAR qty=0.746128 value_jpy=171 // Stock value_jpy=8682 314A qty=10 avg=234.</description>
+    </item>
+    
+    <item>
+      <title>個人サイトを作った</title>
+      <link>https://lohenberg.github.io/posts/20251228/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20251228/</guid>
+      <description>Hello world! Hugo + Github Pagesで個人サイトを改めて作った。ログがあれば振り返られる、をテーマとして運用していこうと考えている。
+Hugo ThemesからHugo Bear Blogをほぼバニラで使うが、必要最低限の改造だけ施す。
+最新記事一覧 トップページに最新記事一覧を表示する。index.htmlを開き、以下を追加する。 1 2 3 4 5 6 7 8 9 10  &amp;lt;ul class=&amp;#34;post-list&amp;#34;&amp;gt; {{ range first 5 (where .Site.RegularPages &amp;#34;Type&amp;#34; &amp;#34;posts&amp;#34;) }} &amp;lt;li class=&amp;#34;post-item&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;post-date&amp;#34;&amp;gt; {{ .Date.Format &amp;#34;Jan. 02, 2006&amp;#34; }} &amp;lt;/span&amp;gt; &amp;lt;a href=&amp;#34;{{ .RelPermalink }}&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; {{ end }} &amp;lt;/ul&amp;gt;   
+スペース調整 最新記事一覧の日付周辺に生じるスペースを調整する。CSSに以下を追加。 1 2 3 4 5 6 7 8 9 10 11 12 13 14  .</description>
+    </item>
+    
+    <item>
+      <title>クリプトコイン履歴 2024-2025 GMOコイン</title>
+      <link>https://lohenberg.github.io/posts/20251220/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20251220/</guid>
+      <description>Transactions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54  JPY reward qty=1000 date=2024-08-01 SOL buy qty=0.05 @18700 date=2024-08-05 XYM point_swap qty=13.6 date=2024-08-06 XLM point_swap qty=3.</description>
+    </item>
+    
     <item>
       <title>Which Comes First: Money Stock or Base Money? — The Twist Between Theory and Reality（日本語訳）</title>
       <link>https://lohenberg.github.io/posts/20250519/</link>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>review on Lohenberg</title>
+    <link>https://lohenberg.github.io/tags/review/</link>
+    <description>Recent content in review on Lohenberg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright 2025-2026, Lohenberg all rights reserved.</copyright>
+    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>元手ゼロ資産チャレンジ</title>
+      <link>https://lohenberg.github.io/posts/20251229/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20251229/</guid>
+      <description>概要 本記事は、銀行からの現金入金を行わずに取得した暗号資産・株式・ETF等を対象とした資産ログの起点となるものである。フォーセットや報酬、ポイント交換・ポイント投資によって得た資産のみを扱い、その保有状況と変化を、ルール化された形式で記録する。
+成果の最大化ではなく、制約条件下での推移を正確に残すことを目的とし、以下にチャレンジの基本ルールと、資産スナップショットの形式を定義する。
+主なルール  銀行口座からの現金入金は禁止  JPY・USD 等の直接入金は行わない   取得元は「無料／代替価値」に限定  暗号資産フォーセット ステーキング報酬・エアドロップ 楽天／Ponta 等のポイント交換 ポイント投資による株式・ETF取得   取得時点の原価は原則ゼロとして扱う  avg（取得単価）は参考値としてのみ記録 評価は各時点での value_jpy を基準    Asset Snapshot 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // Crypto value_jpy=9158 BTC qty=0.0003 value_jpy=4051 ETH qty=0.002047 value_jpy=933 BCH qty=0.00951882 value_jpy=867 SOL qty=0.079889948 value_jpy=1519 OAS qty=3194.855874 value_jpy=805 ATOM qty=2.74454 value_jpy=812 NEAR qty=0.746128 value_jpy=171 // Stock value_jpy=8682 314A qty=10 avg=234.</description>
+    </item>
+    
+  </channel>
+</rss>
