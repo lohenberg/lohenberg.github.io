@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>Copyright 2025-2026 Lohenberg, all rights reserved.</copyright>
-    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YouTube repeat</title>
+      <link>https://lohenberg.github.io/posts/20260512/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://lohenberg.github.io/posts/20260512/</guid>
+      <description>好きな部分だけ再生。
+ #player-wrapper {visibility: hidden;} #main-area{margin-bottom:0em;vertical-align:middle} #main-area input{padding:9px} #main-area div:nth-child(2){margin-top:1em} #main-area .main-url input{width:100%;max-width:600px;} input#volume[type=&#34;range&#34;]{ margin:0!important; padding:0; vertical-align:middle } #volumeValue{ display:inline-block; width:30px; text-align:right; margin-left:5px } #player-area{ background-color:#ccc; border:1px solid #eee; margin-top:20px } #player-wrapper{ position:relative; width:100%; padding-top:56.25%; visibility:hidden } #player{ position:absolute; top:0; left:0; width:100%; height:100% } #playbtn-area{display:inline-block} #playBtn{ width:8em; display:block; margin:1em 0 } #replaybtn-area{display:inline-block} #replayBtn{ width:8em; margin-top:10px; display:none } #option-area{ padding:1em 1em 0 1em; border:1px dotted #555 } #option-area input{ margin-bottom:1em; padding:9px } #option-area select{ padding:9px; width:150px } #option-area input, #option-area select{ display:inline-block; margin-right:10px } #videoUrl{ display:block; width:100%; } #startTime{width:100px} #endTime{width:100px} #repeatCount{width:50px} label{ padding-right:10px }  URL  音量 50  再生  もう一度再生   開始 終了  速度 0.</description>
+    </item>
+    
     <item>
       <title>元手ゼロ資産チャレンジ</title>
       <link>https://lohenberg.github.io/posts/20251229/</link>
