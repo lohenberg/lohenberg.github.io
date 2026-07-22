@@ -12,15 +12,15 @@
     
     
     
-    <lastBuildDate>Thu, 11 Jun 2026 00:00:00 Z</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 Z</lastBuildDate>
     
     <atom:link href="https://lohenberg.github.io/postes/index.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
-      <title>アップしちゃダメだから</title>
-      <link>https://lohenberg.github.io/postes/20260612/</link>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 Z</pubDate>
+      <title>YouTubeループ再生ツールの導入メモ</title>
+      <link>https://lohenberg.github.io/postes/20260722/</link>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 Z</pubDate>
       
 
       
@@ -29,49 +29,32 @@
       
 
       <description>
-      店内は明るく、暖色の照明が天井から均一に落ちている。チェーン店らしい清潔さがあり、テーブルや椅子は軽く、簡単に動かせそうだった。ただ、入口の自動ドアが開閉するたび、外の冷気が薄い膜のように流れ込んできて、足元に溜まる。
-彼女はテーブルをはさんで向かいに座っている。黒いコートは脱がないまま、前を少し開けている。運ばれてきたピザトーストから、わずかに焦げたチーズの匂いが立ち上る。両手で皿を押さえ、フォークを使わず、そのまま持ち上げる。
-ひとくち目を頬張る直前で、彼女は少しだけ動きを止めた。口が開き、チーズが細く伸びている。そのまま写真を撮れば、いかにもSNS向きの瞬間だと思った。
-「それ、アップしちゃダメだから」
-そう言って、彼女は私を見ない。声は低くも高くもなく、店内のざわめきにすぐ溶けた。注意というより、決まり事を思い出させるような調子だった。
-ピザトーストを噛むとき、彼女の頬がわずかに丸くなる。外から入り込んだ冷気が、テーブルの下で揺れている気がした。暖かさと寒さが混ざり合い、どちらにもなりきれないまま、その場に留まっていた。
-写真はそれ以上撮らず、言葉もそれ以上増えない。彼女は何も言わず、黙々と食べ続けた。
+       # ショートコード化 Hugo に適した実装は layouts/shortcodes/ にショートコード化する方法。
 
       </description>
-      <content:encoded>&lt;p&gt;店内は明るく、暖色の照明が天井から均一に落ちている。チェーン店らしい清潔さがあり、テーブルや椅子は軽く、簡単に動かせそうだった。ただ、入口の自動ドアが開閉するたび、外の冷気が薄い膜のように流れ込んできて、足元に溜まる。&lt;/p&gt;
-&lt;p&gt;彼女はテーブルをはさんで向かいに座っている。黒いコートは脱がないまま、前を少し開けている。運ばれてきたピザトーストから、わずかに焦げたチーズの匂いが立ち上る。両手で皿を押さえ、フォークを使わず、そのまま持ち上げる。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/pizza.jpg&#34; alt=&#34;pizza&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ひとくち目を頬張る直前で、彼女は少しだけ動きを止めた。口が開き、チーズが細く伸びている。そのまま写真を撮れば、いかにもSNS向きの瞬間だと思った。&lt;/p&gt;
-&lt;p&gt;「それ、アップしちゃダメだから」&lt;/p&gt;
-&lt;p&gt;そう言って、彼女は私を見ない。声は低くも高くもなく、店内のざわめきにすぐ溶けた。注意というより、決まり事を思い出させるような調子だった。&lt;/p&gt;
-&lt;p&gt;ピザトーストを噛むとき、彼女の頬がわずかに丸くなる。外から入り込んだ冷気が、テーブルの下で揺れている気がした。暖かさと寒さが混ざり合い、どちらにもなりきれないまま、その場に留まっていた。&lt;/p&gt;
-&lt;p&gt;写真はそれ以上撮らず、言葉もそれ以上増えない。彼女は何も言わず、黙々と食べ続けた。&lt;/p&gt;
-</content:encoded>
-      
-      <category>2026</category>
-      
-      
-      <guid isPermaLink="true">https://lohenberg.github.io/postes/20260612/</guid>
-    </item>
-    
-
-    <item>
-      <title>YouTube repeat</title>
-      <link>https://lohenberg.github.io/postes/20260512/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 Z</pubDate>
-      
-
-      
-      
-      
-      
-
-      <description>
-      好きな部分だけ再生。
-URL 音量 50 再生 もう一度再生 開始 終了 回数 速度 0.25x 0.5x 1x 1.5x 2x 
-      </description>
-      <content:encoded>&lt;p&gt;好きな部分だけ再生。&lt;/p&gt;
-
+      <content:encoded>&lt;h2 id=&#34;ショートコード化&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e3%82%b7%e3%83%a7%e3%83%bc%e3%83%88%e3%82%b3%e3%83%bc%e3%83%89%e5%8c%96&#34;&gt;
+        #
+    &lt;/a&gt;
+    ショートコード化
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Hugo に適した実装は &lt;code&gt;layouts/shortcodes/&lt;/code&gt; にショートコード化する方法。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;layouts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;└──&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;shortcodes&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;└──&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;youtube&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;repeat&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;html&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;ここに、HTML + JS を入れる。記事 md で、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
 
 &lt;style&gt;
 #player-wrapper {visibility: hidden;}
@@ -169,20 +152,6 @@ label{
     &lt;label for=&#34;videoUrl&#34;&gt;URL&lt;/label&gt;
     &lt;input type=&#34;text&#34; id=&#34;videoUrl&#34; placeholder=&#34;YouTubeの動画のURLを入力&#34; /&gt;
   &lt;/div&gt;
-
-  &lt;div class=&#34;main-vol&#34;&gt;
-    &lt;label for=&#34;volume&#34;&gt;音量&lt;/label&gt;
-    &lt;input type=&#34;range&#34; id=&#34;volume&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;50&#34; /&gt;
-    &lt;span id=&#34;volumeValue&#34;&gt;50&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;div id=&#34;playbtn-area&#34;&gt;
-    &lt;button id=&#34;playBtn&#34; onclick=&#34;loadAndPlayVideo()&#34;&gt;再生&lt;/button&gt;
-  &lt;/div&gt;
-
-  &lt;div id=&#34;replaybtn-area&#34;&gt;
-    &lt;button id=&#34;replayBtn&#34; onclick=&#34;replay()&#34;&gt;もう一度再生&lt;/button&gt;
-  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div id=&#34;option-area&#34;&gt;
@@ -210,6 +179,23 @@ label{
     &lt;/select&gt;
 
   &lt;/div&gt;
+  
+
+  &lt;div class=&#34;main-vol&#34;&gt;
+    &lt;label for=&#34;volume&#34;&gt;音量&lt;/label&gt;
+    &lt;input type=&#34;range&#34; id=&#34;volume&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;50&#34; /&gt;
+    &lt;span id=&#34;volumeValue&#34;&gt;50&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;playbtn-area&#34;&gt;
+    &lt;button id=&#34;playBtn&#34; onclick=&#34;loadAndPlayVideo()&#34;&gt;再生&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;replaybtn-area&#34;&gt;
+    &lt;button id=&#34;replayBtn&#34; onclick=&#34;replay()&#34;&gt;もう一度再生&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;
 
 &lt;script&gt;
@@ -388,8 +374,414 @@ volumeSlider.addEventListener(&#39;input&#39;, () =&gt; {
   }
 });
 &lt;/script&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;と書くだけで呼び出せる。&lt;/p&gt;
+&lt;h2 id=&#34;ツール&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e3%83%84%e3%83%bc%e3%83%ab&#34;&gt;
+        #
+    &lt;/a&gt;
+    ツール
+&lt;/div&gt;
+&lt;/h2&gt;</content:encoded>
+      
+      <category>2026</category>
+      
+      
+      <guid isPermaLink="true">https://lohenberg.github.io/postes/20260722/</guid>
+    </item>
+    
 
+    <item>
+      <title>アップしちゃダメだから</title>
+      <link>https://lohenberg.github.io/postes/20260612/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 Z</pubDate>
+      
+
+      
+      
+      
+      
+
+      <description>
+      店内は明るく、暖色の照明が天井から均一に落ちている。チェーン店らしい清潔さがあり、テーブルや椅子は軽く、簡単に動かせそうだった。ただ、入口の自動ドアが開閉するたび、外の冷気が薄い膜のように流れ込んできて、足元に溜まる。
+彼女はテーブルをはさんで向かいに座っている。黒いコートは脱がないまま、前を少し開けている。運ばれてきたピザトーストから、わずかに焦げたチーズの匂いが立ち上る。両手で皿を押さえ、フォークを使わず、そのまま持ち上げる。
+ひとくち目を頬張る直前で、彼女は少しだけ動きを止めた。口が開き、チーズが細く伸びている。そのまま写真を撮れば、いかにもSNS向きの瞬間だと思った。
+「それ、アップしちゃダメだから」
+そう言って、彼女は私を見ない。声は低くも高くもなく、店内のざわめきにすぐ溶けた。注意というより、決まり事を思い出させるような調子だった。
+ピザトーストを噛むとき、彼女の頬がわずかに丸くなる。外から入り込んだ冷気が、テーブルの下で揺れている気がした。暖かさと寒さが混ざり合い、どちらにもなりきれないまま、その場に留まっていた。
+写真はそれ以上撮らず、言葉もそれ以上増えない。彼女は何も言わず、黙々と食べ続けた。
+
+      </description>
+      <content:encoded>&lt;p&gt;店内は明るく、暖色の照明が天井から均一に落ちている。チェーン店らしい清潔さがあり、テーブルや椅子は軽く、簡単に動かせそうだった。ただ、入口の自動ドアが開閉するたび、外の冷気が薄い膜のように流れ込んできて、足元に溜まる。&lt;/p&gt;
+&lt;p&gt;彼女はテーブルをはさんで向かいに座っている。黒いコートは脱がないまま、前を少し開けている。運ばれてきたピザトーストから、わずかに焦げたチーズの匂いが立ち上る。両手で皿を押さえ、フォークを使わず、そのまま持ち上げる。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/pizza.jpg&#34; alt=&#34;pizza&#34;&gt;&lt;/p&gt;
+&lt;p&gt;ひとくち目を頬張る直前で、彼女は少しだけ動きを止めた。口が開き、チーズが細く伸びている。そのまま写真を撮れば、いかにもSNS向きの瞬間だと思った。&lt;/p&gt;
+&lt;p&gt;「それ、アップしちゃダメだから」&lt;/p&gt;
+&lt;p&gt;そう言って、彼女は私を見ない。声は低くも高くもなく、店内のざわめきにすぐ溶けた。注意というより、決まり事を思い出させるような調子だった。&lt;/p&gt;
+&lt;p&gt;ピザトーストを噛むとき、彼女の頬がわずかに丸くなる。外から入り込んだ冷気が、テーブルの下で揺れている気がした。暖かさと寒さが混ざり合い、どちらにもなりきれないまま、その場に留まっていた。&lt;/p&gt;
+&lt;p&gt;写真はそれ以上撮らず、言葉もそれ以上増えない。彼女は何も言わず、黙々と食べ続けた。&lt;/p&gt;
 </content:encoded>
+      
+      <category>2026</category>
+      
+      
+      <guid isPermaLink="true">https://lohenberg.github.io/postes/20260612/</guid>
+    </item>
+    
+
+    <item>
+      <title>YouTube動画一部分だけを繰り返し再生するツールを作った</title>
+      <link>https://lohenberg.github.io/postes/20260512/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 Z</pubDate>
+      
+
+      
+      
+      
+      
+
+      <description>
+       # 導入 YouTubeで動画の一部分だけを繰り返し見たい場面は意外と多くあります。プレイヤーのループ再生は動画全体しか繰り返せず、クリップ機能は開始・終了時間を指定できたものの1分までという制限があり、さらに残念なことに2026年4月に廃止されました。タイムスタンプ共有も開始時間しか指定できません。そこで、動画の好きな範囲を指定してループ再生できるツールを作りました。
+
+      </description>
+      <content:encoded>&lt;h2 id=&#34;導入&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e5%b0%8e%e5%85%a5&#34;&gt;
+        #
+    &lt;/a&gt;
+    導入
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;YouTubeで動画の一部分だけを繰り返し見たい場面は意外と多くあります。プレイヤーのループ再生は動画全体しか繰り返せず、クリップ機能は開始・終了時間を指定できたものの1分までという制限があり、さらに残念なことに2026年4月に廃止されました。タイムスタンプ共有も開始時間しか指定できません。そこで、動画の好きな範囲を指定してループ再生できるツールを作りました。&lt;/p&gt;
+&lt;h2 id=&#34;ツール&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e3%83%84%e3%83%bc%e3%83%ab&#34;&gt;
+        #
+    &lt;/a&gt;
+    ツール
+&lt;/div&gt;
+&lt;/h2&gt;
+
+
+&lt;style&gt;
+#player-wrapper {visibility: hidden;}
+
+#main-area{margin-bottom:0em;vertical-align:middle}
+#main-area input{padding:9px}
+#main-area div:nth-child(2){margin-top:1em}
+#main-area .main-url input{width:100%;max-width:600px;}
+
+input#volume[type=&#34;range&#34;]{
+  margin:0!important;
+  padding:0;
+  vertical-align:middle
+}
+
+#volumeValue{
+  display:inline-block;
+  width:30px;
+  text-align:right;
+  margin-left:5px
+}
+
+#player-area{
+  background-color:#ccc;
+  border:1px solid #eee;
+  margin-top:20px
+}
+
+#player-wrapper{
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+  visibility:hidden
+}
+
+#player{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%
+}
+
+#playbtn-area{display:inline-block}
+#playBtn{
+  width:8em;
+  display:block;
+  margin:1em 0
+}
+
+#replaybtn-area{display:inline-block}
+#replayBtn{
+  width:8em;
+  margin-top:10px;
+  display:none
+}
+
+#option-area{
+  padding:1em 1em 0 1em;
+  border:1px dotted #555
+}
+
+#option-area input{
+  margin-bottom:1em;
+  padding:9px
+}
+
+#option-area select{
+  padding:9px;
+  width:150px
+}
+
+#option-area input,
+#option-area select{
+  display:inline-block;
+  margin-right:10px
+}
+
+#videoUrl{
+  display:block;
+  width:100%;
+}
+
+#startTime{width:50px}
+#endTime{width:50px}
+#repeatCount{width:50px}
+
+label{
+  padding-right:10px
+}
+&lt;/style&gt;
+
+&lt;div id=&#34;main-area&#34;&gt;
+  &lt;div class=&#34;main-url&#34;&gt;
+    &lt;label for=&#34;videoUrl&#34;&gt;URL&lt;/label&gt;
+    &lt;input type=&#34;text&#34; id=&#34;videoUrl&#34; placeholder=&#34;YouTubeの動画のURLを入力&#34; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;option-area&#34;&gt;
+  &lt;div class=&#34;op01&#34;&gt;
+    &lt;label for=&#34;startTime&#34;&gt;開始&lt;/label&gt;
+    &lt;input type=&#34;number&#34; id=&#34;startTime&#34; placeholder=&#34;秒数&#34; min=&#34;0&#34; /&gt;
+
+    &lt;label for=&#34;endTime&#34;&gt;終了&lt;/label&gt;
+    &lt;input type=&#34;number&#34; id=&#34;endTime&#34; placeholder=&#34;秒数&#34; min=&#34;0&#34; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;op02&#34;&gt;
+  
+    &lt;label for=&#34;repeatCount&#34;&gt;回数&lt;/label&gt;
+    &lt;input type=&#34;number&#34; id=&#34;repeatCount&#34; placeholder=&#34;ループ回数&#34; min=&#34;1&#34; value=&#34;1&#34; /&gt;
+  
+    &lt;label for=&#34;playbackRate&#34;&gt;速度&lt;/label&gt;
+
+    &lt;select id=&#34;playbackRate&#34;&gt;
+      &lt;option value=&#34;0.25&#34;&gt;0.25x&lt;/option&gt;
+      &lt;option value=&#34;0.5&#34;&gt;0.5x&lt;/option&gt;
+      &lt;option value=&#34;1&#34; selected&gt;1x&lt;/option&gt;
+      &lt;option value=&#34;1.5&#34;&gt;1.5x&lt;/option&gt;
+      &lt;option value=&#34;2&#34;&gt;2x&lt;/option&gt;
+    &lt;/select&gt;
+
+  &lt;/div&gt;
+  
+
+  &lt;div class=&#34;main-vol&#34;&gt;
+    &lt;label for=&#34;volume&#34;&gt;音量&lt;/label&gt;
+    &lt;input type=&#34;range&#34; id=&#34;volume&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;50&#34; /&gt;
+    &lt;span id=&#34;volumeValue&#34;&gt;50&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;playbtn-area&#34;&gt;
+    &lt;button id=&#34;playBtn&#34; onclick=&#34;loadAndPlayVideo()&#34;&gt;再生&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;replaybtn-area&#34;&gt;
+    &lt;button id=&#34;replayBtn&#34; onclick=&#34;replay()&#34;&gt;もう一度再生&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+if (!window.YT) {
+  const tag = document.createElement(&#39;script&#39;);
+  tag.src = &#34;https://www.youtube.com/iframe_api&#34;;
+  document.head.appendChild(tag);
+}
+&lt;/script&gt;
+
+&lt;div id=&#34;player-area&#34;&gt;
+  &lt;div id=&#34;player-wrapper&#34;&gt;
+    &lt;div id=&#34;player&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let player;
+let playerReady = false;
+let startSeconds = 0;
+let endSeconds = 0;
+let totalLoops = 1;
+let currentLoop = 0;
+let isCustomRange = false;
+let playbackChecker;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player(&#39;player&#39;, {
+    videoId: &#39;&#39;,
+    events: {
+      onReady: () =&gt; {
+        playerReady = true;
+        console.log(&#39;Player is ready&#39;);
+      },
+      onStateChange: onPlayerStateChange,
+    },
+    playerVars: {
+      controls: 1,
+      rel: 0
+    },
+  });
+}
+
+function extractVideoId(url) {
+  const regex = /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/))([^\s&amp;?#]+)/;
+  const match = url.match(regex);
+  return match ? match[1] : &#39;&#39;;
+}
+
+function loadAndPlayVideo() {
+  if (!playerReady) {
+    alert(&#39;プレイヤーの読み込み中です。少々お待ちください。&#39;);
+    return;
+  }
+
+  const url = document.getElementById(&#39;videoUrl&#39;).value.trim();
+  const videoId = extractVideoId(url);
+
+  const start = parseFloat(document.getElementById(&#39;startTime&#39;).value);
+  const end = parseFloat(document.getElementById(&#39;endTime&#39;).value);
+
+  const rate = parseFloat(document.getElementById(&#39;playbackRate&#39;).value) || 1;
+  const loops = parseInt(document.getElementById(&#39;repeatCount&#39;).value) || 1;
+  const volume = parseInt(document.getElementById(&#39;volume&#39;).value);
+
+  if (!videoId) {
+    alert(&#39;正しいYouTube動画URLを入力してください。&#39;);
+    return;
+  }
+
+  startSeconds = isNaN(start) ? 0 : start;
+  endSeconds = isNaN(end) ? 0 : end;
+
+  totalLoops = loops;
+  currentLoop = 0;
+
+  isCustomRange = endSeconds &gt; startSeconds;
+
+  document.getElementById(&#39;replayBtn&#39;).style.display = &#39;none&#39;;
+
+  if (playbackChecker) clearInterval(playbackChecker);
+
+  document.getElementById(&#39;player-wrapper&#39;).style.visibility = &#39;visible&#39;;
+
+  if (isCustomRange) {
+    player.cueVideoById({
+      videoId,
+      startSeconds
+    });
+
+    waitForCued(() =&gt; {
+      player.setPlaybackRate(rate);
+      player.setVolume(volume);
+      player.seekTo(startSeconds);
+      player.playVideo();
+    });
+
+  } else {
+    player.loadVideoById({ videoId });
+
+    waitForPlaying(() =&gt; {
+      player.setPlaybackRate(rate);
+      player.setVolume(volume);
+    });
+  }
+}
+
+function waitForCued(callback) {
+  const interval = setInterval(() =&gt; {
+    if (player.getPlayerState() === YT.PlayerState.CUED) {
+      clearInterval(interval);
+      callback();
+    }
+  }, 100);
+}
+
+function waitForPlaying(callback) {
+  const interval = setInterval(() =&gt; {
+    const state = player.getPlayerState();
+
+    if (
+      state === YT.PlayerState.PLAYING ||
+      state === YT.PlayerState.BUFFERING
+    ) {
+      clearInterval(interval);
+      callback();
+    }
+  }, 100);
+}
+
+function replay() {
+  currentLoop = 0;
+
+  document.getElementById(&#39;replayBtn&#39;).style.display = &#39;none&#39;;
+  document.getElementById(&#39;player-wrapper&#39;).style.display = &#39;block&#39;;
+
+  player.seekTo(startSeconds);
+  player.playVideo();
+}
+
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.PLAYING &amp;&amp; isCustomRange) {
+
+    if (playbackChecker) clearInterval(playbackChecker);
+
+    playbackChecker = setInterval(() =&gt; {
+      if (player.getCurrentTime() &gt;= endSeconds) {
+
+        currentLoop++;
+
+        if (currentLoop &lt; totalLoops) {
+          player.seekTo(startSeconds);
+          player.playVideo();
+
+        } else {
+          clearInterval(playbackChecker);
+          player.pauseVideo();
+
+          document.getElementById(&#39;replayBtn&#39;).style.display = &#39;block&#39;;
+        }
+      }
+    }, 200);
+  }
+}
+
+const volumeSlider = document.getElementById(&#39;volume&#39;);
+const volumeValue = document.getElementById(&#39;volumeValue&#39;);
+
+volumeSlider.addEventListener(&#39;input&#39;, () =&gt; {
+  const val = parseInt(volumeSlider.value);
+
+  volumeValue.textContent = val;
+
+  if (playerReady &amp;&amp; player) {
+    player.setVolume(val);
+  }
+});
+&lt;/script&gt;</content:encoded>
       
       <category>2026</category>
       

@@ -91,7 +91,7 @@
     
 
     
-        <link rel="stylesheet" href="./css/style.min.df7aa67d275c740abf28394e7cc73f6be9dd6ac2c679c519db76b183cdd0c99a.css" integrity="sha256-33qmfSdcdAq/KDlOfMc/a&#43;ndasLGecUZ23axg83QyZo=">
+        <link rel="stylesheet" href="./css/style.min.4f2d4ec86f6505af4ad4a037d19de18109017a6c32df198d740d74d761dc597e.css" integrity="sha256-Ty1OyG9lBa9K1KA30Z3hgQkBemwy3xmNdA1012HcWX4=">
     
 
 
@@ -413,6 +413,80 @@
                 
                 
                 <h2 class="p-name post-title ">
+                    <a class="u-url" href="./postes/20260722/">YouTubeループ再生ツールの導入メモ</a>
+                </h2>
+            </header>
+            
+
+        </div>
+
+        
+        
+            <div class="content post-summary p-summary">
+                <h2 id="ショートコード化" >
+<div>
+    <a href="#%e3%82%b7%e3%83%a7%e3%83%bc%e3%83%88%e3%82%b3%e3%83%bc%e3%83%89%e5%8c%96">
+        #
+    </a>
+    ショートコード化
+</div>
+</h2>
+<p>Hugo に適した実装は <code>layouts/shortcodes/</code> にショートコード化する方法。</p>
+            </div>
+        
+        
+        
+            <div class="read-more">
+                <a class="u-url" href="./postes/20260722/">Read more</a>
+            </div>
+        
+        
+        
+        
+        
+
+            
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2026-07-22">2026-07-22</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="./postes/20260722/">/postes/20260722/</a>
+    <a href="https://lohenberg.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Lohenberg</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="./tags/2026">#2026</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+    </article>
+
+
+        
+            
+    <article class="post-list h-feed post-card">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h2 class="p-name post-title ">
                     <a class="u-url" href="./postes/20260612/">アップしちゃダメだから</a>
                 </h2>
             </header>
@@ -482,7 +556,7 @@
                 
                 
                 <h2 class="p-name post-title ">
-                    <a class="u-url" href="./postes/20260512/">YouTube repeat</a>
+                    <a class="u-url" href="./postes/20260512/">YouTube動画一部分だけを繰り返し再生するツールを作った</a>
                 </h2>
             </header>
             
@@ -492,327 +566,22 @@
         
         
             <div class="content post-summary p-summary">
-                <p>好きな部分だけ再生。</p>
-
-
-<style>
-#player-wrapper {visibility: hidden;}
-
-#main-area{margin-bottom:0em;vertical-align:middle}
-#main-area input{padding:9px}
-#main-area div:nth-child(2){margin-top:1em}
-#main-area .main-url input{width:100%;max-width:600px;}
-
-input#volume[type="range"]{
-  margin:0!important;
-  padding:0;
-  vertical-align:middle
-}
-
-#volumeValue{
-  display:inline-block;
-  width:30px;
-  text-align:right;
-  margin-left:5px
-}
-
-#player-area{
-  background-color:#ccc;
-  border:1px solid #eee;
-  margin-top:20px
-}
-
-#player-wrapper{
-  position:relative;
-  width:100%;
-  padding-top:56.25%;
-  visibility:hidden
-}
-
-#player{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%
-}
-
-#playbtn-area{display:inline-block}
-#playBtn{
-  width:8em;
-  display:block;
-  margin:1em 0
-}
-
-#replaybtn-area{display:inline-block}
-#replayBtn{
-  width:8em;
-  margin-top:10px;
-  display:none
-}
-
-#option-area{
-  padding:1em 1em 0 1em;
-  border:1px dotted #555
-}
-
-#option-area input{
-  margin-bottom:1em;
-  padding:9px
-}
-
-#option-area select{
-  padding:9px;
-  width:150px
-}
-
-#option-area input,
-#option-area select{
-  display:inline-block;
-  margin-right:10px
-}
-
-#videoUrl{
-  display:block;
-  width:100%;
-}
-
-#startTime{width:50px}
-#endTime{width:50px}
-#repeatCount{width:50px}
-
-label{
-  padding-right:10px
-}
-</style>
-
-<div id="main-area">
-  <div class="main-url">
-    <label for="videoUrl">URL</label>
-    <input type="text" id="videoUrl" placeholder="YouTubeの動画のURLを入力" />
-  </div>
-
-  <div class="main-vol">
-    <label for="volume">音量</label>
-    <input type="range" id="volume" min="0" max="100" value="50" />
-    <span id="volumeValue">50</span>
-  </div>
-
-  <div id="playbtn-area">
-    <button id="playBtn" onclick="loadAndPlayVideo()">再生</button>
-  </div>
-
-  <div id="replaybtn-area">
-    <button id="replayBtn" onclick="replay()">もう一度再生</button>
-  </div>
+                <h2 id="導入" >
+<div>
+    <a href="#%e5%b0%8e%e5%85%a5">
+        #
+    </a>
+    導入
 </div>
-
-<div id="option-area">
-  <div class="op01">
-    <label for="startTime">開始</label>
-    <input type="number" id="startTime" placeholder="秒数" min="0" />
-
-    <label for="endTime">終了</label>
-    <input type="number" id="endTime" placeholder="秒数" min="0" />
-  </div>
-
-  <div class="op02">
-  
-    <label for="repeatCount">回数</label>
-    <input type="number" id="repeatCount" placeholder="ループ回数" min="1" value="1" />
-  
-    <label for="playbackRate">速度</label>
-
-    <select id="playbackRate">
-      <option value="0.25">0.25x</option>
-      <option value="0.5">0.5x</option>
-      <option value="1" selected>1x</option>
-      <option value="1.5">1.5x</option>
-      <option value="2">2x</option>
-    </select>
-
-  </div>
-</div>
-
-<script>
-if (!window.YT) {
-  const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  document.head.appendChild(tag);
-}
-</script>
-
-<div id="player-area">
-  <div id="player-wrapper">
-    <div id="player"></div>
-  </div>
-</div>
-
-<script>
-let player;
-let playerReady = false;
-let startSeconds = 0;
-let endSeconds = 0;
-let totalLoops = 1;
-let currentLoop = 0;
-let isCustomRange = false;
-let playbackChecker;
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    videoId: '',
-    events: {
-      onReady: () => {
-        playerReady = true;
-        console.log('Player is ready');
-      },
-      onStateChange: onPlayerStateChange,
-    },
-    playerVars: {
-      controls: 1,
-      rel: 0
-    },
-  });
-}
-
-function extractVideoId(url) {
-  const regex = /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/))([^\s&?#]+)/;
-  const match = url.match(regex);
-  return match ? match[1] : '';
-}
-
-function loadAndPlayVideo() {
-  if (!playerReady) {
-    alert('プレイヤーの読み込み中です。少々お待ちください。');
-    return;
-  }
-
-  const url = document.getElementById('videoUrl').value.trim();
-  const videoId = extractVideoId(url);
-
-  const start = parseFloat(document.getElementById('startTime').value);
-  const end = parseFloat(document.getElementById('endTime').value);
-
-  const rate = parseFloat(document.getElementById('playbackRate').value) || 1;
-  const loops = parseInt(document.getElementById('repeatCount').value) || 1;
-  const volume = parseInt(document.getElementById('volume').value);
-
-  if (!videoId) {
-    alert('正しいYouTube動画URLを入力してください。');
-    return;
-  }
-
-  startSeconds = isNaN(start) ? 0 : start;
-  endSeconds = isNaN(end) ? 0 : end;
-
-  totalLoops = loops;
-  currentLoop = 0;
-
-  isCustomRange = endSeconds > startSeconds;
-
-  document.getElementById('replayBtn').style.display = 'none';
-
-  if (playbackChecker) clearInterval(playbackChecker);
-
-  document.getElementById('player-wrapper').style.visibility = 'visible';
-
-  if (isCustomRange) {
-    player.cueVideoById({
-      videoId,
-      startSeconds
-    });
-
-    waitForCued(() => {
-      player.setPlaybackRate(rate);
-      player.setVolume(volume);
-      player.seekTo(startSeconds);
-      player.playVideo();
-    });
-
-  } else {
-    player.loadVideoById({ videoId });
-
-    waitForPlaying(() => {
-      player.setPlaybackRate(rate);
-      player.setVolume(volume);
-    });
-  }
-}
-
-function waitForCued(callback) {
-  const interval = setInterval(() => {
-    if (player.getPlayerState() === YT.PlayerState.CUED) {
-      clearInterval(interval);
-      callback();
-    }
-  }, 100);
-}
-
-function waitForPlaying(callback) {
-  const interval = setInterval(() => {
-    const state = player.getPlayerState();
-
-    if (
-      state === YT.PlayerState.PLAYING ||
-      state === YT.PlayerState.BUFFERING
-    ) {
-      clearInterval(interval);
-      callback();
-    }
-  }, 100);
-}
-
-function replay() {
-  currentLoop = 0;
-
-  document.getElementById('replayBtn').style.display = 'none';
-  document.getElementById('player-wrapper').style.display = 'block';
-
-  player.seekTo(startSeconds);
-  player.playVideo();
-}
-
-function onPlayerStateChange(event) {
-  if (event.data === YT.PlayerState.PLAYING && isCustomRange) {
-
-    if (playbackChecker) clearInterval(playbackChecker);
-
-    playbackChecker = setInterval(() => {
-      if (player.getCurrentTime() >= endSeconds) {
-
-        currentLoop++;
-
-        if (currentLoop < totalLoops) {
-          player.seekTo(startSeconds);
-          player.playVideo();
-
-        } else {
-          clearInterval(playbackChecker);
-          player.pauseVideo();
-
-          document.getElementById('replayBtn').style.display = 'block';
-        }
-      }
-    }, 200);
-  }
-}
-
-const volumeSlider = document.getElementById('volume');
-const volumeValue = document.getElementById('volumeValue');
-
-volumeSlider.addEventListener('input', () => {
-  const val = parseInt(volumeSlider.value);
-
-  volumeValue.textContent = val;
-
-  if (playerReady && player) {
-    player.setVolume(val);
-  }
-});
-</script>
+</h2>
+<p>YouTubeで動画の一部分だけを繰り返し見たい場面は意外と多くあります。プレイヤーのループ再生は動画全体しか繰り返せず、クリップ機能は開始・終了時間を指定できたものの1分までという制限があり、さらに残念なことに2026年4月に廃止されました。タイムスタンプ共有も開始時間しか指定できません。そこで、動画の好きな範囲を指定してループ再生できるツールを作りました。</p>
             </div>
         
         
+        
+            <div class="read-more">
+                <a class="u-url" href="./postes/20260512/">Read more</a>
+            </div>
         
         
         
