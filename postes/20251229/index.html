@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+<html lang="en" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+<meta name="theme-version" content="1.8.0">
+
+
+    <title>元手ゼロ資産チャレンジ - Lohenberg</title>
+
+
+
+  <meta name="description" content="
+
+    
+        ##
+    
+    概要
+
+
+本記事は、銀行からの現金入金を行わずに取得した暗号資産・株式・ETF等を対象とした資産ログの起点となるものである。フォーセットや報酬、ポイント交換・ポイント投資によって得た資産のみを扱い、その保有状況と変化を、ルール化された形式で記録する。
+成果の最大化ではなく、制約条件下での推移を正確に残すことを目的とし、以下にチャレンジの基本ルールと、資産スナップショットの形式を定義する。
+
+
+    
+        ##
+    
+    主なルール
+
+
+
+銀行口座からの現金入金は禁止
+
+JPY・USD 等の直接入金は行わない
+
+
+取得元は「無料／代替価値」に限定
+
+暗号資産フォーセット
+ステーキング報酬・エアドロップ
+楽天／Ponta 等のポイント交換
+ポイント投資による株式・ETF取得
+
+
+取得時点の原価は原則ゼロとして扱う
+
+avg（取得単価）は参考値としてのみ記録
+評価は各時点での value_jpy を基準
+
+
+
+
+
+    
+        ##
+    
+    Asset Snapshot
+
+
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+
+
+// Crypto value_jpy=9158
+BTC qty=0.0003 value_jpy=4051
+ETH qty=0.002047 value_jpy=933
+BCH qty=0.00951882 value_jpy=867
+SOL qty=0.079889948 value_jpy=1519
+OAS qty=3194.855874 value_jpy=805
+ATOM qty=2.74454 value_jpy=812
+NEAR qty=0.746128 value_jpy=171
+
+// Stock value_jpy=8682
+314A qty=10 avg=234.7 value_jpy=3232 pnl=&#43;882
+318A qty=10 avg=588.8 value_jpy=5450 pnl=-440
+
+//Cash
+JPY value_jpy=4635
+
+
+Note: avg = average acquisition price, pnl = profit and loss.">
+  <meta name="author" content="Lohenberg">
+  <meta name="copyright" content="">
+  <meta name="generator" content="Hugo 0.164.0">
+  <link rel="canonical" href="https://lohenberg.github.io/postes/20251229/">
+  
+  
+  
+
+
+<link rel="icon" type="image/x-icon" href="https://lohenberg.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://lohenberg.github.io/apple-touch-icon.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+  
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://lohenberg.github.io/","name":"Lohenberg","position":1},{"@type":"ListItem","item":"https://lohenberg.github.io/postes/","name":"Postes","position":2},{"@type":"ListItem","item":"https://lohenberg.github.io/postes/20251229/","name":"元手ゼロ資産チャレンジ","position":3}]},{"@id":"https://lohenberg.github.io/postes/20251229/#article","@type":"BlogPosting","author":{"@id":"https://lohenberg.github.io/#person"},"dateModified":"2025-12-29T00:00:00Z","datePublished":"2025-12-29T00:00:00Z","description":"\u003ch3 id=\"概要\" \u003e\n\u003cdiv\u003e\n    \u003ca href=\"#%e6%a6%82%e8%a6%81\"\u003e\n        ##\n    \u003c/a\u003e\n    概要\n\u003c/div\u003e\n\u003c/h3\u003e\n\u003cp\u003e本記事は、銀行からの現金入金を行わずに取得した暗号資産・株式・ETF等を対象とした資産ログの起点となるものである。フォーセットや報酬、ポイント交換・ポイント投資によって得た資産のみを扱い、その保有状況と変化を、ルール化された形式で記録する。\u003c/p\u003e\n\u003cp\u003e成果の最大化ではなく、制約条件下での推移を正確に残すことを目的とし、以下にチャレンジの基本ルールと、資産スナップショットの形式を定義する。\u003c/p\u003e\n\u003ch3 id=\"主なルール\" \u003e\n\u003cdiv\u003e\n    \u003ca href=\"#%e4%b8%bb%e3%81%aa%e3%83%ab%e3%83%bc%e3%83%ab\"\u003e\n        ##\n    \u003c/a\u003e\n    主なルール\n\u003c/div\u003e\n\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e銀行口座からの現金入金は禁止\n\u003cul\u003e\n\u003cli\u003eJPY・USD 等の直接入金は行わない\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e取得元は「無料／代替価値」に限定\n\u003cul\u003e\n\u003cli\u003e暗号資産フォーセット\u003c/li\u003e\n\u003cli\u003eステーキング報酬・エアドロップ\u003c/li\u003e\n\u003cli\u003e楽天／Ponta 等のポイント交換\u003c/li\u003e\n\u003cli\u003eポイント投資による株式・ETF取得\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e取得時点の原価は原則ゼロとして扱う\n\u003cul\u003e\n\u003cli\u003eavg（取得単価）は参考値としてのみ記録\u003c/li\u003e\n\u003cli\u003e評価は各時点での value_jpy を基準\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"asset-snapshot\" \u003e\n\u003cdiv\u003e\n    \u003ca href=\"#asset-snapshot\"\u003e\n        ##\n    \u003c/a\u003e\n    Asset Snapshot\n\u003c/div\u003e\n\u003c/h3\u003e\n\u003cp\u003e\u003cdiv class=\"highlight\"\u003e\u003cdiv style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;\"\u003e\n\u003ctable style=\"border-spacing:0;padding:0;margin:0;border:0;\"\u003e\u003ctr\u003e\u003ctd style=\"vertical-align:top;padding:0;margin:0;border:0;\"\u003e\n\u003cpre tabindex=\"0\" style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;\"\u003e\u003ccode\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 1\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 2\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 3\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 4\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 5\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 6\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 7\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 8\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e 9\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e10\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e11\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e12\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e13\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e14\n\u003c/span\u003e\u003cspan style=\"white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f\"\u003e15\n\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/td\u003e\n\u003ctd style=\"vertical-align:top;padding:0;margin:0;border:0;;width:100%\"\u003e\n\u003cpre tabindex=\"0\" style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;\"\u003e\u003ccode class=\"language-go\" data-lang=\"go\"\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#75715e\"\u003e// Crypto value_jpy=9158\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eBTC\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e0.0003\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e4051\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eETH\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e0.002047\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e933\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eBCH\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e0.00951882\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e867\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eSOL\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e0.079889948\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e1519\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eOAS\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e3194.855874\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e805\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eATOM\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e2.74454\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e812\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eNEAR\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e0.746128\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e171\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#75715e\"\u003e// Stock value_jpy=8682\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#ae81ff\"\u003e314\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003eA\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e10\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eavg\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e234.7\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e3232\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003epnl\u003c/span\u003e=\u003cspan style=\"color:#f92672\"\u003e+\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e882\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#ae81ff\"\u003e318\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003eA\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eqty\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e10\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eavg\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e588.8\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e5450\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003epnl\u003c/span\u003e=\u003cspan style=\"color:#f92672\"\u003e-\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e440\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#75715e\"\u003e//Cash\u003c/span\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display:flex;\"\u003e\u003cspan\u003e\u003cspan style=\"color:#a6e22e\"\u003eJPY\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue_jpy\u003c/span\u003e=\u003cspan style=\"color:#ae81ff\"\u003e4635\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003ccode\u003eNote: avg = average acquisition price, pnl = profit and loss.\u003c/code\u003e\u003c/p\u003e","headline":"元手ゼロ資産チャレンジ","inLanguage":"en","mainEntityOfPage":"https://lohenberg.github.io/postes/20251229/","publisher":{"@id":"https://lohenberg.github.io/#person"}},{"@id":"https://lohenberg.github.io/#person","@type":"Person","name":"","url":"https://lohenberg.github.io/"}]}</script>
+
+
+
+
+
+
+
+<script>
+  (function () {
+    var STORAGE_KEY = 'user-color-scheme';
+    var defaultTheme = "dark";
+    var theme;
+    try { theme = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+    if (!theme) {
+      theme = (defaultTheme && defaultTheme !== 'auto')
+        ? defaultTheme
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.df7aa67d275c740abf28394e7cc73f6be9dd6ac2c679c519db76b183cdd0c99a.css" integrity="sha256-33qmfSdcdAq/KDlOfMc/a&#43;ndasLGecUZ23axg83QyZo=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.36237d613e2f5010b19cb88e7d856f3dc9dac9756ac478a7d22e91f314e6c510.css" integrity="sha256-NiN9YT4vUBCxnLiOfYVvPcnayXVqxHin0i6R8xTmxRA=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.61294ff271d5e5c5f4702643f2c1c8b4917fe0a4638dcc5f1611fa695d14e916.css" integrity="sha256-YSlP8nHV5cX0cCZD8sHItJF/4KRjjcxfFhH6aV0U6RY=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.bb11e1ce33a7a4002fcfa8333849032b0e25f0f46658eb52c8347156fbbbe39f.css" integrity="sha256-uxHhzjOnpAAvz6gzOEkDKw4l8PRmWOtSyDRxVvu7458=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.5e912c44779593b31e6b6cfe458754fe87704de3fea46150d3fdb0199a6064b0.css" integrity="sha256-XpEsRHeVk7Mea2z&#43;RYdU/odwTeP&#43;pGFQ0/2wGZpgZLA=">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="../../js/script.min.9752b2b06a7b85657fe0806a9d93413916c87001ca8a2885edc4328662fd7a85.js" type="text/javascript" charset="utf-8" integrity="sha256-l1KysGp7hWV/4IBqnZNBORbIcAHKiiiF7cQyhmL9eoU=" defer></script>
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        
+
+<p class="site-title noselect">
+    <a href="../../">Lohenberg</a>
+</p>
+
+
+        
+
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "dark"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('#theme-toggle')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                if (typeof autoDefinedScheme.addEventListener === 'function') {
+                  autoDefinedScheme.addEventListener('change', autoChangeScheme);
+                } else if (typeof autoDefinedScheme.addListener === 'function') { 
+                  autoDefinedScheme.addListener(autoChangeScheme);
+                }
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        
+<ul class="social-icons noselect">
+
+    
+        <li>
+            <button id="theme-toggle" type="button" aria-label="Toggle color theme">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+            </button>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="../../index.xml" title="RSS" aria-label="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="https://lohenberg.github.io/" title="">Home</a>
+        
+        <a class="" href="https://lohenberg.github.io/about/" title="">About</a>
+        
+        <a class="" href="https://lohenberg.github.io/postes/" title="">Posts</a>
+        
+    </nav>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+        <article class="post h-entry">
+            <div class="post-header">
+                <div class="post-title-row">
+                <header>
+                    
+                    
+                    
+                    <h1 class="p-name post-title ">元手ゼロ資産チャレンジ</h1>
+                    
+
+                </header>
+                
+                </div>
+                
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2025-12-29">2025-12-29</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="../../postes/20251229/">/postes/20251229/</a>
+    <a href="https://lohenberg.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Lohenberg</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="../../tags/2025">#2025</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+            </div>
+            
+
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+            <div class="content e-content">
+                <h3 id="概要" >
+<div>
+    <a href="#%e6%a6%82%e8%a6%81">
+        ##
+    </a>
+    概要
+</div>
+</h3>
+<p>本記事は、銀行からの現金入金を行わずに取得した暗号資産・株式・ETF等を対象とした資産ログの起点となるものである。フォーセットや報酬、ポイント交換・ポイント投資によって得た資産のみを扱い、その保有状況と変化を、ルール化された形式で記録する。</p>
+<p>成果の最大化ではなく、制約条件下での推移を正確に残すことを目的とし、以下にチャレンジの基本ルールと、資産スナップショットの形式を定義する。</p>
+<h3 id="主なルール" >
+<div>
+    <a href="#%e4%b8%bb%e3%81%aa%e3%83%ab%e3%83%bc%e3%83%ab">
+        ##
+    </a>
+    主なルール
+</div>
+</h3>
+<ul>
+<li>銀行口座からの現金入金は禁止
+<ul>
+<li>JPY・USD 等の直接入金は行わない</li>
+</ul>
+</li>
+<li>取得元は「無料／代替価値」に限定
+<ul>
+<li>暗号資産フォーセット</li>
+<li>ステーキング報酬・エアドロップ</li>
+<li>楽天／Ponta 等のポイント交換</li>
+<li>ポイント投資による株式・ETF取得</li>
+</ul>
+</li>
+<li>取得時点の原価は原則ゼロとして扱う
+<ul>
+<li>avg（取得単価）は参考値としてのみ記録</li>
+<li>評価は各時点での value_jpy を基準</li>
+</ul>
+</li>
+</ul>
+<h3 id="asset-snapshot" >
+<div>
+    <a href="#asset-snapshot">
+        ##
+    </a>
+    Asset Snapshot
+</div>
+</h3>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Crypto value_jpy=9158</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BTC</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">0.0003</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">4051</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ETH</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">0.002047</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">933</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BCH</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">0.00951882</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">867</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">SOL</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">0.079889948</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">1519</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">OAS</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">3194.855874</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">805</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ATOM</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">2.74454</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">812</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NEAR</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">0.746128</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">171</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Stock value_jpy=8682</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">314</span><span style="color:#a6e22e">A</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">10</span> <span style="color:#a6e22e">avg</span>=<span style="color:#ae81ff">234.7</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">3232</span> <span style="color:#a6e22e">pnl</span>=<span style="color:#f92672">+</span><span style="color:#ae81ff">882</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">318</span><span style="color:#a6e22e">A</span> <span style="color:#a6e22e">qty</span>=<span style="color:#ae81ff">10</span> <span style="color:#a6e22e">avg</span>=<span style="color:#ae81ff">588.8</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">5450</span> <span style="color:#a6e22e">pnl</span>=<span style="color:#f92672">-</span><span style="color:#ae81ff">440</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Cash</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">JPY</span> <span style="color:#a6e22e">value_jpy</span>=<span style="color:#ae81ff">4635</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<code>Note: avg = average acquisition price, pnl = profit and loss.</code></p>
+
+            </div>
+        </article>
+
+        
+        
+        
+            
+            
+                <h3 class="read-next-title noselect">Read next</h3>
+                <ul class="read-next-posts noselect">
+                    
+                    <li><a href="../../postes/20251228/">個人サイトを作った</a></li>
+                    
+                    <li><a href="../../postes/20251220/">クリプトコイン履歴 2024-2025 GMOコイン</a></li>
+                    
+                    <li><a href="../../postes/20250519/">Which Comes First: Money Stock or Base Money? — The Twist Between Theory and Reality（日本語訳）</a></li>
+                    
+                    <li><a href="../../postes/20250515/">The True Nature of Reserves: When Quantitative Easing Works—and When It Doesn&#39;t（日本語訳）</a></li>
+                    
+                </ul>
+            
+        
+
+        
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+    
+
+        </main>
+        <footer class="common-footer noselect">
+            
+                
+                
+                
+                
+
+
+
+<div class="common-footer-bottom">
+    
+
+    <div class="footer-meta">
+        
+        © 2026 Lohenberg
+        
+    </div>
+</div>
+
+            
+        </footer>
+    </div>
+</body>
+</html>

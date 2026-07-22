@@ -1,101 +1,157 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
   <channel>
-    <title>Posts on Lohenberg</title>
-    <link>https://lohenberg.github.io/posts/</link>
-    <description>Recent content in Posts on Lohenberg</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <copyright>Copyright 2025-2026 Lohenberg, all rights reserved.</copyright>
-    <lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lohenberg.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>アップしちゃダメだから</title>
-      <link>https://lohenberg.github.io/posts/20260612/</link>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lohenberg.github.io/posts/20260612/</guid>
-      <description>店内は明るく、暖色の照明が天井から均一に落ちている。チェーン店らしい清潔さがあり、テーブルや椅子は軽く、簡単に動かせそうだった。ただ、入口の自動ドアが開閉するたび、外の冷気が薄い膜のように流れ込んできて、足元に溜まる。
-彼女はテーブルをはさんで向かいに座っている。黒いコートは脱がないまま、前を少し開けている。運ばれてきたピザトーストから、わずかに焦げたチーズの匂いが立ち上る。両手で皿を押さえ、フォークを使わず、そのまま持ち上げる。
-ひとくち目を頬張る直前で、彼女は少しだけ動きを止めた。口が開き、チーズが細く伸びている。そのまま写真を撮れば、いかにもSNS向きの瞬間だと思った。
-「それ、アップしちゃダメだから」
-そう言って、彼女は私を見ない。声は低くも高くもなく、店内のざわめきにすぐ溶けた。注意というより、決まり事を思い出させるような調子だった。
-ピザトーストを噛むとき、彼女の頬がわずかに丸くなる。外から入り込んだ冷気が、テーブルの下で揺れている気がした。暖かさと寒さが混ざり合い、どちらにもなりきれないまま、その場に留まっていた。
-写真はそれ以上撮らず、言葉もそれ以上増えない。彼女は何も言わず、黙々と食べ続けた。</description>
-    </item>
+    <title>Lohenberg</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent blog posts on Lohenberg</description>
     
-    <item>
-      <title>YouTube repeat</title>
-      <link>https://lohenberg.github.io/posts/20260512/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lohenberg.github.io/posts/20260512/</guid>
-      <description>好きな部分だけ再生。
- #player-wrapper {visibility: hidden;} #main-area{margin-bottom:0em;vertical-align:middle} #main-area input{padding:9px} #main-area div:nth-child(2){margin-top:1em} #main-area .main-url input{width:100%;max-width:600px;} input#volume[type=&#34;range&#34;]{ margin:0!important; padding:0; vertical-align:middle } #volumeValue{ display:inline-block; width:30px; text-align:right; margin-left:5px } #player-area{ background-color:#ccc; border:1px solid #eee; margin-top:20px } #player-wrapper{ position:relative; width:100%; padding-top:56.25%; visibility:hidden } #player{ position:absolute; top:0; left:0; width:100%; height:100% } #playbtn-area{display:inline-block} #playBtn{ width:8em; display:block; margin:1em 0 } #replaybtn-area{display:inline-block} #replayBtn{ width:8em; margin-top:10px; display:none } #option-area{ padding:1em 1em 0 1em; border:1px dotted #555 } #option-area input{ margin-bottom:1em; padding:9px } #option-area select{ padding:9px; width:150px } #option-area input, #option-area select{ display:inline-block; margin-right:10px } #videoUrl{ display:block; width:100%; } #startTime{width:100px} #endTime{width:100px} #repeatCount{width:50px} label{ padding-right:10px }  URL  音量 50  再生  もう一度再生   開始 終了  速度 0.</description>
-    </item>
+    <generator>Hugo (https://gohugo.io)</generator>
     
-    <item>
-      <title>元手ゼロ資産チャレンジ</title>
-      <link>https://lohenberg.github.io/posts/20251229/</link>
-      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://lohenberg.github.io/posts/20251229/</guid>
-      <description>概要 本記事は、銀行からの現金入金を行わずに取得した暗号資産・株式・ETF等を対象とした資産ログの起点となるものである。フォーセットや報酬、ポイント交換・ポイント投資によって得た資産のみを扱い、その保有状況と変化を、ルール化された形式で記録する。
-成果の最大化ではなく、制約条件下での推移を正確に残すことを目的とし、以下にチャレンジの基本ルールと、資産スナップショットの形式を定義する。
-主なルール  銀行口座からの現金入金は禁止  JPY・USD 等の直接入金は行わない   取得元は「無料／代替価値」に限定  暗号資産フォーセット ステーキング報酬・エアドロップ 楽天／Ponta 等のポイント交換 ポイント投資による株式・ETF取得   取得時点の原価は原則ゼロとして扱う  avg（取得単価）は参考値としてのみ記録 評価は各時点での value_jpy を基準    Asset Snapshot 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // Crypto value_jpy=9158 BTC qty=0.0003 value_jpy=4051 ETH qty=0.002047 value_jpy=933 BCH qty=0.00951882 value_jpy=867 SOL qty=0.079889948 value_jpy=1519 OAS qty=3194.855874 value_jpy=805 ATOM qty=2.74454 value_jpy=812 NEAR qty=0.746128 value_jpy=171 // Stock value_jpy=8682 314A qty=10 avg=234.</description>
-    </item>
+    <language>en</language>
     
-    <item>
-      <title>個人サイトを作った</title>
-      <link>https://lohenberg.github.io/posts/20251228/</link>
-      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://lohenberg.github.io/posts/20251228/</guid>
-      <description>Hello world! Hugo + Github Pagesで個人サイトを改めて作った。ログがあれば振り返られる、をテーマとして運用していこうと考えている。
-Hugo ThemesからHugo Bear Blogをほぼバニラで使うが、必要最低限の改造だけ施す。
-最新記事一覧 トップページに最新記事一覧を表示する。index.htmlを開き、以下を追加する。 1 2 3 4 5 6 7 8 9 10  &amp;lt;ul class=&amp;#34;post-list&amp;#34;&amp;gt; {{ range first 5 (where .Site.RegularPages &amp;#34;Type&amp;#34; &amp;#34;posts&amp;#34;) }} &amp;lt;li class=&amp;#34;post-item&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;post-date&amp;#34;&amp;gt; {{ .Date.Format &amp;#34;Jan. 02, 2006&amp;#34; }} &amp;lt;/span&amp;gt; &amp;lt;a href=&amp;#34;{{ .RelPermalink }}&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; {{ end }} &amp;lt;/ul&amp;gt;   
-スペース調整 最新記事一覧の日付周辺に生じるスペースを調整する。CSSに以下を追加。 1 2 3 4 5 6 7 8 9 10 11 12 13 14  .</description>
-    </item>
     
-    <item>
-      <title>クリプトコイン履歴 2024-2025 GMOコイン</title>
-      <link>https://lohenberg.github.io/posts/20251220/</link>
-      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://lohenberg.github.io/posts/20251220/</guid>
-      <description>Transactions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54  JPY reward qty=1000 date=2024-08-01 SOL buy qty=0.05 @18700 date=2024-08-05 XYM point_swap qty=13.6 date=2024-08-06 XLM point_swap qty=3.</description>
-    </item>
     
-    <item>
-      <title>Which Comes First: Money Stock or Base Money? — The Twist Between Theory and Reality（日本語訳）</title>
-      <link>https://lohenberg.github.io/posts/20250519/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://lohenberg.github.io/posts/20250519/</guid>
-      <description>導入・問題提起 2013年、日銀は当時の黒田総裁のもとで「異次元の金融緩和」と称される前例のない政策を打ち出した。物価上昇率2%の達成を目標に、長期国債の大量買入れを通じてマネタリーベースを急拡大させ、人々の将来に対するインフレ期待を高めることで、消費や投資を刺激しようとするものだった。これは従来の金利操作型政策から大きく踏み出し、「人々の期待」に働きかけて経済全体を動かすという意欲的な試みだったといえる。
-しかし、このアプローチは本当に機能したのだろうか。たとえば、日銀が供給した大量のマネーは、果たして実体経済の中で実際に使われ、循環したのか。期待が行動を変えるという前提は、現実の経済にどこまで通用したのか。そもそも私たちの経済において、お金の流れはどこから始まるのか？——この問いを手がかりに、現代のマネーの動き方と、それを前提とした政策の効果を改めて考えてみたい。
-世界一般の金融メカニズム 経済の現場におけるマネーの流れは、「銀行が貸し出すことで預金が生まれる」という構造が基本である。これは直感に反するかもしれないが、現代の金融実務においては、銀行は預金を集めてから貸し出すのではなく、貸出と同時に預金を創造する。たとえば企業が設備投資のために銀行から融資を受けると、その時点で企業の口座に貸出金額が預金として記帳され、これが経済における新しいマネーとして機能する。
-この点について、イングランド銀行（Bank of England）は2014年のレポートで次のように述べている。
- &amp;ldquo;Whenever a bank makes a loan, it simultaneously creates a matching deposit in the borrower’s bank account, thereby creating new money. Rather than banks receiving deposits when households save and then lending them out, bank lending creates deposits.&amp;rdquo;
- つまり、お金は貸出によって創られるのであり、貯蓄が貸出の原資となるという従来のイメージとは異なる構造を持っている。
-さらに同レポートでは、マネー創造の主体が誰であるかについても明確にしている。
- &amp;ldquo;Commercial banks create money, in the form of bank deposits, by making new loans.&amp;rdquo;
- マネーの創造は中央銀行ではなく、商業銀行が日々の貸出業務を通じて担っているのである。この事実は、中央銀行がマネー供給を直接コントロールしているという一般的な誤解を正すものだ。実際、イングランド銀行は次のようにも指摘している。
- &amp;ldquo;In reality, neither are reserves a binding constraint on lending, nor does the central bank fix the amount of reserves that are available.</description>
-    </item>
+    <lastBuildDate>Thu, 15 May 2025 00:00:00 Z</lastBuildDate>
     
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+
     <item>
       <title>The True Nature of Reserves: When Quantitative Easing Works—and When It Doesn&#39;t（日本語訳）</title>
-      <link>https://lohenberg.github.io/posts/20250515/</link>
-      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/posts/20250515/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 Z</pubDate>
       
-      <guid>https://lohenberg.github.io/posts/20250515/</guid>
-      <description>問題提起：中央銀行の準備金積み増しはインフレを喚起するのか？ 量的緩和（Quantitative Easing, QE）は、金融危機以降の主要国で頻繁に採用されてきた政策手段であるが、その効果、とりわけインフレとの因果関係については今なお議論が続いている。通俗的な説明では、中央銀行が資産を買い入れて準備金を増やすことで、世の中の「お金の量」が増え、やがてインフレが加速するとされている。だが、この見解には根本的な誤解が含まれている。
+
+      
+      
+      
+      
+
+      <description>
+       ## 問題提起：中央銀行の準備金積み増しはインフレを喚起するのか？ 量的緩和（Quantitative Easing, QE）は、金融危機以降の主要国で頻繁に採用されてきた政策手段であるが、その効果、とりわけインフレとの因果関係については今なお議論が続いている。通俗的な説明では、中央銀行が資産を買い入れて準備金を増やすことで、世の中の「お金の量」が増え、やがてインフレが加速するとされている。だが、この見解には根本的な誤解が含まれている。
 実際には、中央銀行によって創出された準備金は、市中銀行の保有資産であり、家計や企業などの実体経済部門には直接届かない。したがって、中央銀行のバランスシートが拡大しても、それ自体は「非金融部門における購買力の増加」を意味するものではない。ECB副総裁 Vítor Constâncio は次のように指摘する。
- &amp;ldquo;Central bank reserves are held by banks and are not part of money held by the non-financial sector, hence not, per se, an inflationary type of liquidity. There is no acceptable theory linking in a necessary way the monetary base created by central banks to inflation.&amp;rdquo;
+&amp;amp;ldquo;Central bank reserves are held by banks and are not part of money held by the non-financial sector, hence not, per se, an inflationary type of liquidity. There is no acceptable theory linking in a necessary way the monetary base created by central banks to inflation.&amp;amp;rdquo;
 中央銀行準備金は銀行によって保有されるものであり、非金融部門が保有する貨幣の一部ではない。そのため、それ自体がインフレ的な流動性とは言えない。また、中央銀行が創出するマネタリーベースとインフレとを必然的に結びつける理論は存在しない。
- このように見てくると、量的緩和がインフレをもたらすという因果関係は、直観的には理解しやすいが、理論的にも実証的にも支持されているわけではない。むしろ、そのような誤解が金融政策の評価を歪めてきた可能性がある。
-準備金の増加とは何を意味するのか？ 量的緩和政策において中央銀行が行っていることは、主として国債やMBS（モーゲージ担保証券）などの資産を市場から買い入れることである。このとき、買い入れの対価として新たな準備金が市中銀行に供給されるが、この「準備金の増加」が即座に民間の貸出の増加をもたらすわけではない。準備金の総量は、単に中央銀行の資産取得の規模を反映しているにすぎず、それ自体が銀行の融資活動の指標とはなり得ない。
-この点について、Interest on Excess Reserves and Cash &amp;ldquo;Parked&amp;rdquo; at the Fed (2012) では次のように明言されている。</description>
+このように見てくると、量的緩和がインフレをもたらすという因果関係は、直観的には理解しやすいが、理論的にも実証的にも支持されているわけではない。むしろ、そのような誤解が金融政策の評価を歪めてきた可能性がある。
+## 準備金の増加とは何を意味するのか？ 量的緩和政策において中央銀行が行っていることは、主として国債やMBS（モーゲージ担保証券）などの資産を市場から買い入れることである。このとき、買い入れの対価として新たな準備金が市中銀行に供給されるが、この「準備金の増加」が即座に民間の貸出の増加をもたらすわけではない。準備金の総量は、単に中央銀行の資産取得の規模を反映しているにすぎず、それ自体が銀行の融資活動の指標とはなり得ない。
+この点について、Interest on Excess Reserves and Cash &amp;amp;ldquo;Parked&amp;amp;rdquo; at the Fed (2012) では次のように明言されている。
+
+      </description>
+      <content:encoded>&lt;h3 id=&#34;問題提起中央銀行の準備金積み増しはインフレを喚起するのか&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e5%95%8f%e9%a1%8c%e6%8f%90%e8%b5%b7%e4%b8%ad%e5%a4%ae%e9%8a%80%e8%a1%8c%e3%81%ae%e6%ba%96%e5%82%99%e9%87%91%e7%a9%8d%e3%81%bf%e5%a2%97%e3%81%97%e3%81%af%e3%82%a4%e3%83%b3%e3%83%95%e3%83%ac%e3%82%92%e5%96%9a%e8%b5%b7%e3%81%99%e3%82%8b%e3%81%ae%e3%81%8b&#34;&gt;
+        ##
+    &lt;/a&gt;
+    問題提起：中央銀行の準備金積み増しはインフレを喚起するのか？
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;量的緩和（Quantitative Easing, QE）は、金融危機以降の主要国で頻繁に採用されてきた政策手段であるが、その効果、とりわけインフレとの因果関係については今なお議論が続いている。通俗的な説明では、中央銀行が資産を買い入れて準備金を増やすことで、世の中の「お金の量」が増え、やがてインフレが加速するとされている。だが、この見解には根本的な誤解が含まれている。&lt;/p&gt;
+&lt;p&gt;実際には、中央銀行によって創出された準備金は、市中銀行の保有資産であり、家計や企業などの実体経済部門には直接届かない。したがって、中央銀行のバランスシートが拡大しても、それ自体は「非金融部門における購買力の増加」を意味するものではない。ECB副総裁 Vítor Constâncio は次のように指摘する。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Central bank reserves are held by banks and are not part of money held by the non-financial sector, hence not, per se, an inflationary type of liquidity. There is no acceptable theory linking in a necessary way the monetary base created by central banks to inflation.&amp;rdquo;&lt;br&gt;
+中央銀行準備金は銀行によって保有されるものであり、非金融部門が保有する貨幣の一部ではない。そのため、それ自体がインフレ的な流動性とは言えない。また、中央銀行が創出するマネタリーベースとインフレとを必然的に結びつける理論は存在しない。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;このように見てくると、量的緩和がインフレをもたらすという因果関係は、直観的には理解しやすいが、理論的にも実証的にも支持されているわけではない。むしろ、そのような誤解が金融政策の評価を歪めてきた可能性がある。&lt;/p&gt;
+&lt;h3 id=&#34;準備金の増加とは何を意味するのか&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e6%ba%96%e5%82%99%e9%87%91%e3%81%ae%e5%a2%97%e5%8a%a0%e3%81%a8%e3%81%af%e4%bd%95%e3%82%92%e6%84%8f%e5%91%b3%e3%81%99%e3%82%8b%e3%81%ae%e3%81%8b&#34;&gt;
+        ##
+    &lt;/a&gt;
+    準備金の増加とは何を意味するのか？
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;量的緩和政策において中央銀行が行っていることは、主として国債やMBS（モーゲージ担保証券）などの資産を市場から買い入れることである。このとき、買い入れの対価として新たな準備金が市中銀行に供給されるが、この「準備金の増加」が即座に民間の貸出の増加をもたらすわけではない。準備金の総量は、単に中央銀行の資産取得の規模を反映しているにすぎず、それ自体が銀行の融資活動の指標とはなり得ない。&lt;/p&gt;
+&lt;p&gt;この点について、Interest on Excess Reserves and Cash &amp;ldquo;Parked&amp;rdquo; at the Fed (2012) では次のように明言されている。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;In fact, the total quantity of reserve balances held by banks conveys no information about their lending activities – it simply reflects the Federal Reserve’s decisions on how many assets to acquire.&amp;rdquo;&lt;br&gt;
+実際、銀行が保有する準備金残高の総量は、彼らの貸出活動について何の情報も含まない。それは単に連邦準備制度がどの程度の資産を取得したかという決定を反映しているだけである。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ここで重要なのは、準備金が「貸出余力」であるというイメージが実態と乖離している点である。貸出は、後述するように、銀行の信用創造プロセスとリスク判断によって決まるものであり、中央銀行がどれほど準備金を供給したかという事実とは切り離されている。準備金は金融システム内の決済手段として重要な役割を果たしてはいるが、それ自体が実体経済への貨幣供給を拡大させる直接的要因ではない。&lt;/p&gt;
+&lt;h3 id=&#34;銀行は融資を先に行い準備金は後から調達する&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e9%8a%80%e8%a1%8c%e3%81%af%e8%9e%8d%e8%b3%87%e3%82%92%e5%85%88%e3%81%ab%e8%a1%8c%e3%81%84%e6%ba%96%e5%82%99%e9%87%91%e3%81%af%e5%be%8c%e3%81%8b%e3%82%89%e8%aa%bf%e9%81%94%e3%81%99%e3%82%8b&#34;&gt;
+        ##
+    &lt;/a&gt;
+    銀行は融資を先に行い、準備金は後から調達する
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;伝統的な教科書的説明では、中央銀行が準備金を供給し、それをもとに市中銀行が預金を創出し、貸出を増やすという「貨幣乗数モデル」が広く流布してきた。しかし、このモデルは現代の銀行制度を正確には反映しておらず、政策判断を誤らせる要因ともなりうる。&lt;/p&gt;
+&lt;p&gt;現実には、銀行はまず貸出という信用供与を行い、その過程で預金（すなわち新たな貨幣）を創出する。その後、決済や準備要件を満たすために、必要に応じて準備金を市場や中央銀行から調達するのが一般的な順序である。Operational Constraints on the Stabilization of Money Supply Growth (1969) は次のように指摘している。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The idea of a regular injection of reserves&amp;hellip; suffers from a naive assumption&amp;hellip; In the real world, banks extend credit, creating deposits in the process, and look for the reserves later.&amp;rdquo;&lt;br&gt;
+準備金の定期的な注入がある、という考え方（少なくともいくつかのアプローチにおいて）は、銀行システムがあらかじめ準備金を受け取ってから融資を拡大する、という素朴な仮定に基づいている。しかし現実の世界では、銀行は信用を供与し、その過程で預金を創出し、その後に準備金を調達するのである。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;また貨幣乗数モデルの誤謬についても、Vítor Constâncio は次のように指摘する。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;This fits into the old theoretical view&amp;hellip; In reality the sequence works more in the opposite direction with banks taking first their credit decisions and then looking for the necessary funding and reserves of central bank money.&amp;rdquo;&lt;br&gt;
+中央銀行からの融資が即座に非金融部門への信用に変換されると考える者もいる。この見方は、中央銀行による一次流動性の創出が、銀行の信用判断を通じて貨幣供給全体へと拡大していくという、古い理論モデルに基づいている。しかし現実には、その順序はほぼ逆であり、銀行はまず信用判断を行い、それに必要な資金と中央銀行マネーを後から調達する。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;このように、信用創造の主導権は常に市中銀行にあり、中央銀行はむしろ「後追い」で準備金を供給する立場にある。したがって、準備金が潤沢であるという事実が、それ自体として貸出拡大を保証するものではない。銀行の行動は、別の論理によって駆動されている。&lt;/p&gt;
+&lt;h3 id=&#34;銀行の融資行動は準備金ではなくリスクとリターンの判断&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e9%8a%80%e8%a1%8c%e3%81%ae%e8%9e%8d%e8%b3%87%e8%a1%8c%e5%8b%95%e3%81%af%e6%ba%96%e5%82%99%e9%87%91%e3%81%a7%e3%81%af%e3%81%aa%e3%81%8f%e3%83%aa%e3%82%b9%e3%82%af%e3%81%a8%e3%83%aa%e3%82%bf%e3%83%bc%e3%83%b3%e3%81%ae%e5%88%a4%e6%96%ad&#34;&gt;
+        ##
+    &lt;/a&gt;
+    銀行の融資行動は、準備金ではなくリスクとリターンの判断
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;準備金が潤沢に供給されているにもかかわらず、貸出が増えない状況は、近年多くの国で観察されてきた。これは、銀行の融資行動が単純な「準備金の量」によって決まっているわけではないことを示している。むしろ、銀行は個々の貸出案件に対して、信用リスク、返済可能性、市場環境、規制要件などを総合的に判断し、リスクとリターンのバランスが取れていると判断した場合にのみ融資を実行する。BIS Working Papers No 292 には以下のような明快な指摘がある。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;In fact, the level of reserves hardly figures in banks&amp;rsquo; lending decisions. The amount of credit outstanding is determined by banks&amp;rsquo; willingness to supply loans, based on perceived risk-return trade-offs, and by the demand for those loans. The aggregate availability of bank reserves does not constrain the expansion directly.&amp;rdquo;&lt;br&gt;
+実際、準備金の水準は銀行の貸出判断にほとんど影響を与えない。信用残高の水準は、銀行が融資を供給しようとする意欲、すなわち認識されたリスクとリターンのバランスに基づいており、また融資に対する需要にも依存している。銀行準備金の総量が貸出拡大を直接的に制約することはない。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;このように、貸出とは本質的にリスク評価に基づく投資行動であり、中央銀行の準備金政策とは切り離された次元で動いている。たとえ市場に余剰流動性が存在していても、貸出需要が不十分であったり、銀行が信用リスクを過大と判断すれば、信用の拡大には結びつかない。つまり、「貸せるかどうか」よりも、「貸したいかどうか」「借りたい人がいるかどうか」がはるかに重要な判断軸となる。&lt;/p&gt;
+&lt;h3 id=&#34;量的緩和政策が意味を持つ場面とは&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e9%87%8f%e7%9a%84%e7%b7%a9%e5%92%8c%e6%94%bf%e7%ad%96%e3%81%8c%e6%84%8f%e5%91%b3%e3%82%92%e6%8c%81%e3%81%a4%e5%a0%b4%e9%9d%a2%e3%81%a8%e3%81%af&#34;&gt;
+        ##
+    &lt;/a&gt;
+    量的緩和政策が意味を持つ場面とは？
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;これまで見てきたように、量的緩和（QE）は準備金を直接的に実体経済に流し込む手段ではなく、それ自体がインフレや貸出の拡大をもたらすわけではない。しかし、それはQEが常に無力であるということを意味するものではない。むしろ、QEが有効に機能するのは、通常の貸出メカニズムが壊れている、あるいは深刻に機能不全に陥っているような特異な状況においてである。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;To be clear: this is not to say that central banks are powerless to influence bank lending. In situations where lending is initially limited by significant funding constraints at the bank level – either because of illiquid assets or inability to borrow – interventions that alleviate this will facilitate lending.&amp;rdquo;&lt;br&gt;
+中央銀行が銀行貸出に影響を与えられない、というわけではない。銀行が著しい資金制約に直面しており、それが貸出を制限しているような状況――たとえば、資産が非流動化しているか、市場から借入ができない場合など――において、中央銀行がこうした制約を緩和することは、貸出を促進する可能性がある。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;このような状況下では、中央銀行による準備金供給は、単に「貸出余力を高める」のではなく、バランスシートの流動性を改善するという金融安定政策としての意味を持つ。つまり、中央銀行が保有資産と引き換えに流動性資産を供給することで、市場が機能しなくなった局面における「最後の貸し手」としての役割を果たすのである。&lt;/p&gt;
+&lt;p&gt;さらに次のような指摘もある。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Thus, contrary to the popular assertion&amp;hellip; it is precisely in such situations that the likelihood of their having any significant impact is greatest&amp;hellip; Reserves simply constitute one possible asset among the many that can serve this purpose.&amp;rdquo;&lt;br&gt;
+銀行貸出チャネルやマネー乗数が“壊れている”ときに、準備金の注入が効果を持たないという主張とは反対に、実はそのような状況こそが、準備金が最も大きな影響力を発揮する可能性が高い。とはいえ、その基本的なメカニズムは、銀行に流動性資産を供給し、バランスシートを流動化することにある。準備金はこの目的を果たすための多くの資産のうちの一つにすぎない。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;言い換えれば、量的緩和の効果は、準備金の「量」にあるのではなく、それが金融機関のバランスシートに与える「質的」な影響、すなわち流動性危機の緩和にこそ見出されるべきである。これはインフレ目標や貸出拡大とは異なる目的――金融安定や信用不安の沈静化――を達成するための道具立てなのである。&lt;/p&gt;
+&lt;h3 id=&#34;まとめ量的緩和の限界と可能性を見極める視点&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e3%81%be%e3%81%a8%e3%82%81%e9%87%8f%e7%9a%84%e7%b7%a9%e5%92%8c%e3%81%ae%e9%99%90%e7%95%8c%e3%81%a8%e5%8f%af%e8%83%bd%e6%80%a7%e3%82%92%e8%a6%8b%e6%a5%b5%e3%82%81%e3%82%8b%e8%a6%96%e7%82%b9&#34;&gt;
+        ##
+    &lt;/a&gt;
+    まとめ：量的緩和の限界と可能性を見極める視点
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;量的緩和政策によって中央銀行が準備金を大規模に供給しても、それが直ちにインフレを引き起こしたり、貸出を活性化させたりするとは限らない。準備金は民間経済に直接流れ込むものではなく、その総量は中央銀行の資産取得方針を反映するに過ぎない。市中銀行はまずリスクとリターンに基づいて融資判断を行い、その後に必要な準備金を調達する。つまり、準備金は信用創造の「前提」ではなく「結果」である。&lt;/p&gt;
+&lt;p&gt;ただし、金融システムが流動性不足や信用不安に陥っている場合、中央銀行による資産購入と準備金供給は、金融機関のバランスシートを流動化し、信用仲介機能を回復させるうえで重要な役割を果たしうる。量的緩和の本質的な意義は、「量」で経済を刺激することではなく、「質」において市場が果たせなくなった機能を一時的に代替することにある。&lt;/p&gt;
+&lt;h3 id=&#34;参考文献&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae&#34;&gt;
+        ##
+    &lt;/a&gt;
+    参考文献
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ecb.europa.eu/press/key/date/2011/html/sp111208.en.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Challenges to monetary policy in 2012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://libertystreeteconomics.newyorkfed.org/2012/08/interest-on-excess-reserves-and-cash-parked-at-the-fed/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Interest on Excess Reserves and Cash &amp;ldquo;Parked&amp;rdquo; at the Fed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bostonfed.org/news-and-events/events/economic-research-conference-series/controlling-monetary-aggregates.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Operational Constraints on the Stabilization of Money Supply Growth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bis.org/publ/work292.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Unconventional monetary policies: an appraisal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      
+      <category>2025</category>
+      
+      
+      <guid isPermaLink="true">http://localhost:1313/posts/20250515/</guid>
     </item>
     
   </channel>

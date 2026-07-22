@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+<html lang="en" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+<meta name="theme-version" content="1.8.0">
+
+
+    <title>YouTube repeat - Lohenberg</title>
+
+
+
+  <meta name="description" content="好きな部分だけ再生。
+
+
+
+
+
+  
+    URL
+    
+  
+
+  
+    音量
+    
+    50
+  
+
+  
+    再生
+  
+
+  
+    もう一度再生
+  
+
+
+
+  
+    開始
+    
+
+    終了
+    
+  
+
+  
+  
+    回数
+    
+  
+    速度
+
+    
+      0.25x
+      0.5x
+      1x
+      1.5x
+      2x
+    
+
+  
+
+
+
+
+
+  
+    
+  
+
+
+">
+  <meta name="author" content="Lohenberg">
+  <meta name="copyright" content="">
+  <meta name="generator" content="Hugo 0.164.0">
+  <link rel="canonical" href="https://lohenberg.github.io/postes/20260512/">
+  
+  
+  
+
+
+<link rel="icon" type="image/x-icon" href="https://lohenberg.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://lohenberg.github.io/apple-touch-icon.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+  
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://lohenberg.github.io/","name":"Lohenberg","position":1},{"@type":"ListItem","item":"https://lohenberg.github.io/postes/","name":"Postes","position":2},{"@type":"ListItem","item":"https://lohenberg.github.io/postes/20260512/","name":"YouTube repeat","position":3}]},{"@id":"https://lohenberg.github.io/postes/20260512/#article","@type":"BlogPosting","author":{"@id":"https://lohenberg.github.io/#person"},"dateModified":"2026-05-12T00:00:00Z","datePublished":"2026-05-12T00:00:00Z","description":"\u003cp\u003e好きな部分だけ再生。\u003c/p\u003e\n\n\n\u003cstyle\u003e\n#player-wrapper {visibility: hidden;}\n\n#main-area{margin-bottom:0em;vertical-align:middle}\n#main-area input{padding:9px}\n#main-area div:nth-child(2){margin-top:1em}\n#main-area .main-url input{width:100%;max-width:600px;}\n\ninput#volume[type=\"range\"]{\n  margin:0!important;\n  padding:0;\n  vertical-align:middle\n}\n\n#volumeValue{\n  display:inline-block;\n  width:30px;\n  text-align:right;\n  margin-left:5px\n}\n\n#player-area{\n  background-color:#ccc;\n  border:1px solid #eee;\n  margin-top:20px\n}\n\n#player-wrapper{\n  position:relative;\n  width:100%;\n  padding-top:56.25%;\n  visibility:hidden\n}\n\n#player{\n  position:absolute;\n  top:0;\n  left:0;\n  width:100%;\n  height:100%\n}\n\n#playbtn-area{display:inline-block}\n#playBtn{\n  width:8em;\n  display:block;\n  margin:1em 0\n}\n\n#replaybtn-area{display:inline-block}\n#replayBtn{\n  width:8em;\n  margin-top:10px;\n  display:none\n}\n\n#option-area{\n  padding:1em 1em 0 1em;\n  border:1px dotted #555\n}\n\n#option-area input{\n  margin-bottom:1em;\n  padding:9px\n}\n\n#option-area select{\n  padding:9px;\n  width:150px\n}\n\n#option-area input,\n#option-area select{\n  display:inline-block;\n  margin-right:10px\n}\n\n#videoUrl{\n  display:block;\n  width:100%;\n}\n\n#startTime{width:50px}\n#endTime{width:50px}\n#repeatCount{width:50px}\n\nlabel{\n  padding-right:10px\n}\n\u003c/style\u003e\n\n\u003cdiv id=\"main-area\"\u003e\n  \u003cdiv class=\"main-url\"\u003e\n    \u003clabel for=\"videoUrl\"\u003eURL\u003c/label\u003e\n    \u003cinput type=\"text\" id=\"videoUrl\" placeholder=\"YouTubeの動画のURLを入力\" /\u003e\n  \u003c/div\u003e\n\n  \u003cdiv class=\"main-vol\"\u003e\n    \u003clabel for=\"volume\"\u003e音量\u003c/label\u003e\n    \u003cinput type=\"range\" id=\"volume\" min=\"0\" max=\"100\" value=\"50\" /\u003e\n    \u003cspan id=\"volumeValue\"\u003e50\u003c/span\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"playbtn-area\"\u003e\n    \u003cbutton id=\"playBtn\" onclick=\"loadAndPlayVideo()\"\u003e再生\u003c/button\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"replaybtn-area\"\u003e\n    \u003cbutton id=\"replayBtn\" onclick=\"replay()\"\u003eもう一度再生\u003c/button\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cdiv id=\"option-area\"\u003e\n  \u003cdiv class=\"op01\"\u003e\n    \u003clabel for=\"startTime\"\u003e開始\u003c/label\u003e\n    \u003cinput type=\"number\" id=\"startTime\" placeholder=\"秒数\" min=\"0\" /\u003e\n\n    \u003clabel for=\"endTime\"\u003e終了\u003c/label\u003e\n    \u003cinput type=\"number\" id=\"endTime\" placeholder=\"秒数\" min=\"0\" /\u003e\n  \u003c/div\u003e\n\n  \u003cdiv class=\"op02\"\u003e\n  \n    \u003clabel for=\"repeatCount\"\u003e回数\u003c/label\u003e\n    \u003cinput type=\"number\" id=\"repeatCount\" placeholder=\"ループ回数\" min=\"1\" value=\"1\" /\u003e\n  \n    \u003clabel for=\"playbackRate\"\u003e速度\u003c/label\u003e\n\n    \u003cselect id=\"playbackRate\"\u003e\n      \u003coption value=\"0.25\"\u003e0.25x\u003c/option\u003e\n      \u003coption value=\"0.5\"\u003e0.5x\u003c/option\u003e\n      \u003coption value=\"1\" selected\u003e1x\u003c/option\u003e\n      \u003coption value=\"1.5\"\u003e1.5x\u003c/option\u003e\n      \u003coption value=\"2\"\u003e2x\u003c/option\u003e\n    \u003c/select\u003e\n\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\nif (!window.YT) {\n  const tag = document.createElement('script');\n  tag.src = \"https://www.youtube.com/iframe_api\";\n  document.head.appendChild(tag);\n}\n\u003c/script\u003e\n\n\u003cdiv id=\"player-area\"\u003e\n  \u003cdiv id=\"player-wrapper\"\u003e\n    \u003cdiv id=\"player\"\u003e\u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\nlet player;\nlet playerReady = false;\nlet startSeconds = 0;\nlet endSeconds = 0;\nlet totalLoops = 1;\nlet currentLoop = 0;\nlet isCustomRange = false;\nlet playbackChecker;\n\nfunction onYouTubeIframeAPIReady() {\n  player = new YT.Player('player', {\n    videoId: '',\n    events: {\n      onReady: () =\u003e {\n        playerReady = true;\n        console.log('Player is ready');\n      },\n      onStateChange: onPlayerStateChange,\n    },\n    playerVars: {\n      controls: 1,\n      rel: 0\n    },\n  });\n}\n\nfunction extractVideoId(url) {\n  const regex = /(?:youtu\\.be\\/|youtube\\.com\\/(?:watch\\?v=|embed\\/|v\\/|shorts\\/))([^\\s\u0026?#]+)/;\n  const match = url.match(regex);\n  return match ? match[1] : '';\n}\n\nfunction loadAndPlayVideo() {\n  if (!playerReady) {\n    alert('プレイヤーの読み込み中です。少々お待ちください。');\n    return;\n  }\n\n  const url = document.getElementById('videoUrl').value.trim();\n  const videoId = extractVideoId(url);\n\n  const start = parseFloat(document.getElementById('startTime').value);\n  const end = parseFloat(document.getElementById('endTime').value);\n\n  const rate = parseFloat(document.getElementById('playbackRate').value) || 1;\n  const loops = parseInt(document.getElementById('repeatCount').value) || 1;\n  const volume = parseInt(document.getElementById('volume').value);\n\n  if (!videoId) {\n    alert('正しいYouTube動画URLを入力してください。');\n    return;\n  }\n\n  startSeconds = isNaN(start) ? 0 : start;\n  endSeconds = isNaN(end) ? 0 : end;\n\n  totalLoops = loops;\n  currentLoop = 0;\n\n  isCustomRange = endSeconds \u003e startSeconds;\n\n  document.getElementById('replayBtn').style.display = 'none';\n\n  if (playbackChecker) clearInterval(playbackChecker);\n\n  document.getElementById('player-wrapper').style.visibility = 'visible';\n\n  if (isCustomRange) {\n    player.cueVideoById({\n      videoId,\n      startSeconds\n    });\n\n    waitForCued(() =\u003e {\n      player.setPlaybackRate(rate);\n      player.setVolume(volume);\n      player.seekTo(startSeconds);\n      player.playVideo();\n    });\n\n  } else {\n    player.loadVideoById({ videoId });\n\n    waitForPlaying(() =\u003e {\n      player.setPlaybackRate(rate);\n      player.setVolume(volume);\n    });\n  }\n}\n\nfunction waitForCued(callback) {\n  const interval = setInterval(() =\u003e {\n    if (player.getPlayerState() === YT.PlayerState.CUED) {\n      clearInterval(interval);\n      callback();\n    }\n  }, 100);\n}\n\nfunction waitForPlaying(callback) {\n  const interval = setInterval(() =\u003e {\n    const state = player.getPlayerState();\n\n    if (\n      state === YT.PlayerState.PLAYING ||\n      state === YT.PlayerState.BUFFERING\n    ) {\n      clearInterval(interval);\n      callback();\n    }\n  }, 100);\n}\n\nfunction replay() {\n  currentLoop = 0;\n\n  document.getElementById('replayBtn').style.display = 'none';\n  document.getElementById('player-wrapper').style.display = 'block';\n\n  player.seekTo(startSeconds);\n  player.playVideo();\n}\n\nfunction onPlayerStateChange(event) {\n  if (event.data === YT.PlayerState.PLAYING \u0026\u0026 isCustomRange) {\n\n    if (playbackChecker) clearInterval(playbackChecker);\n\n    playbackChecker = setInterval(() =\u003e {\n      if (player.getCurrentTime() \u003e= endSeconds) {\n\n        currentLoop++;\n\n        if (currentLoop \u003c totalLoops) {\n          player.seekTo(startSeconds);\n          player.playVideo();\n\n        } else {\n          clearInterval(playbackChecker);\n          player.pauseVideo();\n\n          document.getElementById('replayBtn').style.display = 'block';\n        }\n      }\n    }, 200);\n  }\n}\n\nconst volumeSlider = document.getElementById('volume');\nconst volumeValue = document.getElementById('volumeValue');\n\nvolumeSlider.addEventListener('input', () =\u003e {\n  const val = parseInt(volumeSlider.value);\n\n  volumeValue.textContent = val;\n\n  if (playerReady \u0026\u0026 player) {\n    player.setVolume(val);\n  }\n});\n\u003c/script\u003e","headline":"YouTube repeat","inLanguage":"en","mainEntityOfPage":"https://lohenberg.github.io/postes/20260512/","publisher":{"@id":"https://lohenberg.github.io/#person"}},{"@id":"https://lohenberg.github.io/#person","@type":"Person","name":"","url":"https://lohenberg.github.io/"}]}</script>
+
+
+
+
+
+
+
+<script>
+  (function () {
+    var STORAGE_KEY = 'user-color-scheme';
+    var defaultTheme = "dark";
+    var theme;
+    try { theme = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+    if (!theme) {
+      theme = (defaultTheme && defaultTheme !== 'auto')
+        ? defaultTheme
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.df7aa67d275c740abf28394e7cc73f6be9dd6ac2c679c519db76b183cdd0c99a.css" integrity="sha256-33qmfSdcdAq/KDlOfMc/a&#43;ndasLGecUZ23axg83QyZo=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.36237d613e2f5010b19cb88e7d856f3dc9dac9756ac478a7d22e91f314e6c510.css" integrity="sha256-NiN9YT4vUBCxnLiOfYVvPcnayXVqxHin0i6R8xTmxRA=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.61294ff271d5e5c5f4702643f2c1c8b4917fe0a4638dcc5f1611fa695d14e916.css" integrity="sha256-YSlP8nHV5cX0cCZD8sHItJF/4KRjjcxfFhH6aV0U6RY=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.bb11e1ce33a7a4002fcfa8333849032b0e25f0f46658eb52c8347156fbbbe39f.css" integrity="sha256-uxHhzjOnpAAvz6gzOEkDKw4l8PRmWOtSyDRxVvu7458=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.5e912c44779593b31e6b6cfe458754fe87704de3fea46150d3fdb0199a6064b0.css" integrity="sha256-XpEsRHeVk7Mea2z&#43;RYdU/odwTeP&#43;pGFQ0/2wGZpgZLA=">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="../../js/script.min.9752b2b06a7b85657fe0806a9d93413916c87001ca8a2885edc4328662fd7a85.js" type="text/javascript" charset="utf-8" integrity="sha256-l1KysGp7hWV/4IBqnZNBORbIcAHKiiiF7cQyhmL9eoU=" defer></script>
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        
+
+<p class="site-title noselect">
+    <a href="../../">Lohenberg</a>
+</p>
+
+
+        
+
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "dark"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('#theme-toggle')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                if (typeof autoDefinedScheme.addEventListener === 'function') {
+                  autoDefinedScheme.addEventListener('change', autoChangeScheme);
+                } else if (typeof autoDefinedScheme.addListener === 'function') { 
+                  autoDefinedScheme.addListener(autoChangeScheme);
+                }
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        
+<ul class="social-icons noselect">
+
+    
+        <li>
+            <button id="theme-toggle" type="button" aria-label="Toggle color theme">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+            </button>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="../../index.xml" title="RSS" aria-label="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="https://lohenberg.github.io/" title="">Home</a>
+        
+        <a class="" href="https://lohenberg.github.io/about/" title="">About</a>
+        
+        <a class="" href="https://lohenberg.github.io/postes/" title="">Posts</a>
+        
+    </nav>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+        <article class="post h-entry">
+            <div class="post-header">
+                <div class="post-title-row">
+                <header>
+                    
+                    
+                    
+                    <h1 class="p-name post-title ">YouTube repeat</h1>
+                    
+
+                </header>
+                
+                </div>
+                
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2026-05-12">2026-05-12</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="../../postes/20260512/">/postes/20260512/</a>
+    <a href="https://lohenberg.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Lohenberg</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="../../tags/2026">#2026</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+            </div>
+            
+
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+            <div class="content e-content">
+                <p>好きな部分だけ再生。</p>
+
+
+<style>
+#player-wrapper {visibility: hidden;}
+
+#main-area{margin-bottom:0em;vertical-align:middle}
+#main-area input{padding:9px}
+#main-area div:nth-child(2){margin-top:1em}
+#main-area .main-url input{width:100%;max-width:600px;}
+
+input#volume[type="range"]{
+  margin:0!important;
+  padding:0;
+  vertical-align:middle
+}
+
+#volumeValue{
+  display:inline-block;
+  width:30px;
+  text-align:right;
+  margin-left:5px
+}
+
+#player-area{
+  background-color:#ccc;
+  border:1px solid #eee;
+  margin-top:20px
+}
+
+#player-wrapper{
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+  visibility:hidden
+}
+
+#player{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%
+}
+
+#playbtn-area{display:inline-block}
+#playBtn{
+  width:8em;
+  display:block;
+  margin:1em 0
+}
+
+#replaybtn-area{display:inline-block}
+#replayBtn{
+  width:8em;
+  margin-top:10px;
+  display:none
+}
+
+#option-area{
+  padding:1em 1em 0 1em;
+  border:1px dotted #555
+}
+
+#option-area input{
+  margin-bottom:1em;
+  padding:9px
+}
+
+#option-area select{
+  padding:9px;
+  width:150px
+}
+
+#option-area input,
+#option-area select{
+  display:inline-block;
+  margin-right:10px
+}
+
+#videoUrl{
+  display:block;
+  width:100%;
+}
+
+#startTime{width:50px}
+#endTime{width:50px}
+#repeatCount{width:50px}
+
+label{
+  padding-right:10px
+}
+</style>
+
+<div id="main-area">
+  <div class="main-url">
+    <label for="videoUrl">URL</label>
+    <input type="text" id="videoUrl" placeholder="YouTubeの動画のURLを入力" />
+  </div>
+
+  <div class="main-vol">
+    <label for="volume">音量</label>
+    <input type="range" id="volume" min="0" max="100" value="50" />
+    <span id="volumeValue">50</span>
+  </div>
+
+  <div id="playbtn-area">
+    <button id="playBtn" onclick="loadAndPlayVideo()">再生</button>
+  </div>
+
+  <div id="replaybtn-area">
+    <button id="replayBtn" onclick="replay()">もう一度再生</button>
+  </div>
+</div>
+
+<div id="option-area">
+  <div class="op01">
+    <label for="startTime">開始</label>
+    <input type="number" id="startTime" placeholder="秒数" min="0" />
+
+    <label for="endTime">終了</label>
+    <input type="number" id="endTime" placeholder="秒数" min="0" />
+  </div>
+
+  <div class="op02">
+  
+    <label for="repeatCount">回数</label>
+    <input type="number" id="repeatCount" placeholder="ループ回数" min="1" value="1" />
+  
+    <label for="playbackRate">速度</label>
+
+    <select id="playbackRate">
+      <option value="0.25">0.25x</option>
+      <option value="0.5">0.5x</option>
+      <option value="1" selected>1x</option>
+      <option value="1.5">1.5x</option>
+      <option value="2">2x</option>
+    </select>
+
+  </div>
+</div>
+
+<script>
+if (!window.YT) {
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
+}
+</script>
+
+<div id="player-area">
+  <div id="player-wrapper">
+    <div id="player"></div>
+  </div>
+</div>
+
+<script>
+let player;
+let playerReady = false;
+let startSeconds = 0;
+let endSeconds = 0;
+let totalLoops = 1;
+let currentLoop = 0;
+let isCustomRange = false;
+let playbackChecker;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    videoId: '',
+    events: {
+      onReady: () => {
+        playerReady = true;
+        console.log('Player is ready');
+      },
+      onStateChange: onPlayerStateChange,
+    },
+    playerVars: {
+      controls: 1,
+      rel: 0
+    },
+  });
+}
+
+function extractVideoId(url) {
+  const regex = /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/))([^\s&?#]+)/;
+  const match = url.match(regex);
+  return match ? match[1] : '';
+}
+
+function loadAndPlayVideo() {
+  if (!playerReady) {
+    alert('プレイヤーの読み込み中です。少々お待ちください。');
+    return;
+  }
+
+  const url = document.getElementById('videoUrl').value.trim();
+  const videoId = extractVideoId(url);
+
+  const start = parseFloat(document.getElementById('startTime').value);
+  const end = parseFloat(document.getElementById('endTime').value);
+
+  const rate = parseFloat(document.getElementById('playbackRate').value) || 1;
+  const loops = parseInt(document.getElementById('repeatCount').value) || 1;
+  const volume = parseInt(document.getElementById('volume').value);
+
+  if (!videoId) {
+    alert('正しいYouTube動画URLを入力してください。');
+    return;
+  }
+
+  startSeconds = isNaN(start) ? 0 : start;
+  endSeconds = isNaN(end) ? 0 : end;
+
+  totalLoops = loops;
+  currentLoop = 0;
+
+  isCustomRange = endSeconds > startSeconds;
+
+  document.getElementById('replayBtn').style.display = 'none';
+
+  if (playbackChecker) clearInterval(playbackChecker);
+
+  document.getElementById('player-wrapper').style.visibility = 'visible';
+
+  if (isCustomRange) {
+    player.cueVideoById({
+      videoId,
+      startSeconds
+    });
+
+    waitForCued(() => {
+      player.setPlaybackRate(rate);
+      player.setVolume(volume);
+      player.seekTo(startSeconds);
+      player.playVideo();
+    });
+
+  } else {
+    player.loadVideoById({ videoId });
+
+    waitForPlaying(() => {
+      player.setPlaybackRate(rate);
+      player.setVolume(volume);
+    });
+  }
+}
+
+function waitForCued(callback) {
+  const interval = setInterval(() => {
+    if (player.getPlayerState() === YT.PlayerState.CUED) {
+      clearInterval(interval);
+      callback();
+    }
+  }, 100);
+}
+
+function waitForPlaying(callback) {
+  const interval = setInterval(() => {
+    const state = player.getPlayerState();
+
+    if (
+      state === YT.PlayerState.PLAYING ||
+      state === YT.PlayerState.BUFFERING
+    ) {
+      clearInterval(interval);
+      callback();
+    }
+  }, 100);
+}
+
+function replay() {
+  currentLoop = 0;
+
+  document.getElementById('replayBtn').style.display = 'none';
+  document.getElementById('player-wrapper').style.display = 'block';
+
+  player.seekTo(startSeconds);
+  player.playVideo();
+}
+
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.PLAYING && isCustomRange) {
+
+    if (playbackChecker) clearInterval(playbackChecker);
+
+    playbackChecker = setInterval(() => {
+      if (player.getCurrentTime() >= endSeconds) {
+
+        currentLoop++;
+
+        if (currentLoop < totalLoops) {
+          player.seekTo(startSeconds);
+          player.playVideo();
+
+        } else {
+          clearInterval(playbackChecker);
+          player.pauseVideo();
+
+          document.getElementById('replayBtn').style.display = 'block';
+        }
+      }
+    }, 200);
+  }
+}
+
+const volumeSlider = document.getElementById('volume');
+const volumeValue = document.getElementById('volumeValue');
+
+volumeSlider.addEventListener('input', () => {
+  const val = parseInt(volumeSlider.value);
+
+  volumeValue.textContent = val;
+
+  if (playerReady && player) {
+    player.setVolume(val);
+  }
+});
+</script>
+
+
+            </div>
+        </article>
+
+        
+        
+        
+            
+            
+        
+
+        
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+    
+
+        </main>
+        <footer class="common-footer noselect">
+            
+                
+                
+                
+                
+
+
+
+<div class="common-footer-bottom">
+    
+
+    <div class="footer-meta">
+        
+        © 2026 Lohenberg
+        
+    </div>
+</div>
+
+            
+        </footer>
+    </div>
+</body>
+</html>

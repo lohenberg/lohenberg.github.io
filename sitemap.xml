@@ -1,78 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://lohenberg.github.io/tags/2026/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/tags/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20260612/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20260512/</loc>
-    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/tags/2025/</loc>
-    <lastmod>2025-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20251229/</loc>
-    <lastmod>2025-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/about/</loc>
-    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20251228/</loc>
-    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20251220/</loc>
-    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20250519/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/posts/20250515/</loc>
-    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://lohenberg.github.io/series/</loc>
-  </url>
-  
+        <loc>https://lohenberg.github.io/tags/2026/</loc>
+        <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/</loc>
+        <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/</loc>
+        <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/tags/</loc>
+        <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20260612/</loc>
+        <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20260512/</loc>
+        <lastmod>2026-05-12T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/tags/2025/</loc>
+        <lastmod>2025-12-29T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20251229/</loc>
+        <lastmod>2025-12-29T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/about/</loc>
+        <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20251228/</loc>
+        <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20251220/</loc>
+        <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20250519/</loc>
+        <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/postes/20250515/</loc>
+        <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://lohenberg.github.io/categories/</loc>
+      </url><url>
+        <loc>https://lohenberg.github.io/series/</loc>
+      </url>
 </urlset>
