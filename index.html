@@ -423,22 +423,33 @@
         
         
             <div class="content post-summary p-summary">
-                <h2 id="ショートコード化" >
-<div>
-    <a href="#%e3%82%b7%e3%83%a7%e3%83%bc%e3%83%88%e3%82%b3%e3%83%bc%e3%83%89%e5%8c%96">
-        #
-    </a>
-    ショートコード化
+                <p><a href="./postes/20260512/" target="_blank" rel="noopener noreferrer">YouTube動画一部分だけを繰り返し再生するツール</a> の具体的な導入メモ。<br>
+Hugo に適した実装は <code>layouts/shortcodes/</code> にショートコード化する方法。</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">layouts</span><span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">└──</span> <span style="color:#a6e22e">shortcodes</span><span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">└──</span> <span style="color:#a6e22e">youtube</span><span style="color:#f92672">-</span><span style="color:#a6e22e">repeat</span>.<span style="color:#a6e22e">html</span></span></span></code></pre></td></tr></table>
 </div>
-</h2>
-<p>Hugo に適した実装は <code>layouts/shortcodes/</code> にショートコード化する方法。</p>
+</div>
+<p>ここに HTML + JS を入れる。記事 md で、</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">youtube_repeat</span> &gt;}}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>と書くだけで呼び出せる。</p>
             </div>
         
         
-        
-            <div class="read-more">
-                <a class="u-url" href="./postes/20260722/">Read more</a>
-            </div>
         
         
         
@@ -487,6 +498,74 @@
                 
                 
                 <h2 class="p-name post-title ">
+                    <a class="u-url" href="./postes/20260720/">自由であるほど何も選べなくなる</a>
+                </h2>
+            </header>
+            
+
+        </div>
+
+        
+        
+            <div class="content post-summary p-summary">
+                <p>彼女は目を覆ったまま、静かに言った。</p>
+<p>「好きにしていいよ」</p>
+<p>その一言のあと、ためらいもなく、そっと舌を覗かせる。</p>
+            </div>
+        
+        
+        
+            <div class="read-more">
+                <a class="u-url" href="./postes/20260720/">Read more</a>
+            </div>
+        
+        
+        
+        
+        
+
+            
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2026-07-20">2026-07-20</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="./postes/20260720/">/postes/20260720/</a>
+    <a href="https://lohenberg.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Lohenberg</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="./tags/2026">#2026</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+    </article>
+
+
+        
+            
+    <article class="post-list h-feed post-card">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h2 class="p-name post-title ">
                     <a class="u-url" href="./postes/20260612/">アップしちゃダメだから</a>
                 </h2>
             </header>
@@ -499,7 +578,7 @@
             <div class="content post-summary p-summary">
                 <p>店内は明るく、暖色の照明が天井から均一に落ちている。チェーン店らしい清潔さがあり、テーブルや椅子は軽く、簡単に動かせそうだった。ただ、入口の自動ドアが開閉するたび、外の冷気が薄い膜のように流れ込んできて、足元に溜まる。</p>
 <p>彼女はテーブルをはさんで向かいに座っている。黒いコートは脱がないまま、前を少し開けている。運ばれてきたピザトーストから、わずかに焦げたチーズの匂いが立ち上る。両手で皿を押さえ、フォークを使わず、そのまま持ち上げる。</p>
-<p><img src="./images/pizza.jpg" alt="pizza"></p>
+<p><img src="./images/20260612.jpg" alt="pizza"></p>
 <p>ひとくち目を頬張る直前で、彼女は少しだけ動きを止めた。口が開き、チーズが細く伸びている。そのまま写真を撮れば、いかにもSNS向きの瞬間だと思った。</p>
 <p>「それ、アップしちゃダメだから」</p>
 <p>そう言って、彼女は私を見ない。声は低くも高くもなく、店内のざわめきにすぐ溶けた。注意というより、決まり事を思い出させるような調子だった。</p>
@@ -521,7 +600,7 @@
 <div class="post-info noselect">
     
         <div class="post-date dt-published">
-            <time datetime="2026-06-11">2026-06-11</time>
+            <time datetime="2026-06-12">2026-06-12</time>
             
         </div>
     
@@ -556,7 +635,7 @@
                 
                 
                 <h2 class="p-name post-title ">
-                    <a class="u-url" href="./postes/20260512/">YouTube動画一部分だけを繰り返し再生するツールを作った</a>
+                    <a class="u-url" href="./postes/20260512/">YouTube動画一部分だけを繰り返し再生するツール</a>
                 </h2>
             </header>
             
